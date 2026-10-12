@@ -1,0 +1,8 @@
+.react-router
+build
+node_modules
+README.md
+research
+artifacts
+test-results
+playwright-report

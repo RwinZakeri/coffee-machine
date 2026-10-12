@@ -1,0 +1,8 @@
+# Headless conversion environment, used only for asset preparation.
+# VTK is a required shared-library dependency of this OCP binary.
+cadquery-ocp==8.0.1.1.0
+cadquery-ocp-proxy==8.0.1.1.0
+vtk==9.6.2
+numpy==2.5.4
+trimesh==5.1.1
+Pillow==12.3.0

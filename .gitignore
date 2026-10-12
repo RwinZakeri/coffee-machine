@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.env.*
+.vercel/
+/node_modules/
+
+# React Router
+/.react-router/
+/build/
+
+research/
+artifacts/
+test-results/
+playwright-report/
+__pycache__/
+*.pyc
