@@ -11,7 +11,6 @@ import { MachineAssembly } from "./MachineAssembly";
 import { CameraRig } from "./CameraRig";
 import { LightingRig } from "./LightingRig";
 import { LoadingScreen } from "../components/LoadingScreen";
-import { createReconstructedParts } from "./data/reconstructedParts";
 
 function ContextGuard({ onLoss }: { onLoss: () => void }) {
   const { gl, invalidate, setDpr } = useThree();
@@ -47,12 +46,12 @@ export function ExperienceCanvas({ reducedMotion, onReady, onInventory }: { redu
     loadMachineAssets(controller.signal, (count, total) => setBytes({ loaded: count, total })).then((result) => {
       loaded = result; if (controller.signal.aborted) return;
       const inventory: Record<string, number> = {};
-      [...buildPartsManifest(result.index), ...createReconstructedParts()].forEach((part) => { inventory[part.group] = (inventory[part.group] || 0) + 1; });
+      buildPartsManifest(result.index).forEach((part) => { inventory[part.group] = (inventory[part.group] || 0) + 1; });
       callbacks.current.onInventory(inventory); setAssets(result);
     }).catch((reason: unknown) => { if (!controller.signal.aborted) setError(reason instanceof Error ? reason.message : "Unknown asset loading error"); });
     return () => { controller.abort(); if (loaded) disposeMachineAssets(loaded.model); };
   }, [attempt]);
-  return <div className="canvas-container" aria-label="Interactive 3D assembly of the Linea PB AV 2-group espresso machine">
+  return <div className="canvas-container" aria-label="Interactive 3D assembly of the Jaxo coffee machine">
     {assets ? <SceneBoundary><Canvas frameloop="demand" dpr={mobile ? [1, 1.2] : [1, 1.6]} shadows={{ type: PCFShadowMap }} camera={{ position: [1.2, .7, 1.7], near: .025, far: 250, fov: 32 }} gl={{ antialias: true, alpha: false, powerPreference: "high-performance", toneMapping: ACESFilmicToneMapping }} onCreated={({ gl }) => { gl.toneMappingExposure = 1.05; callbacks.current.onReady(); }} fallback={<div className="scene-error" role="alert">WebGL 2 is unavailable. The chapter text and source library remain accessible.</div>}>
       <ContextGuard onLoss={() => setError("The graphics context was lost. Retry to restore the model.")} />
       <CameraRig reducedMotion={reducedMotion} /><LightingRig /><MachineAssembly assets={assets} reducedMotion={reducedMotion} />

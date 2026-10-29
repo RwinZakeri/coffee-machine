@@ -2,32 +2,42 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.js";
 import type { GLTF } from "three/examples/jsm/loaders/GLTFLoader.js";
 import type { Vec3, QuaternionTuple } from "../types";
+import { MACHINE } from "../data/machineConfig";
 
 export interface AssetNode {
   nodeName: string;
   sourceName: string;
   position: Vec3;
   quaternion: QuaternionTuple;
+  scale?: Vec3;
   bounds: { min: Vec3; max: Vec3 };
   materialGroup?: string;
   group?: string;
   sourcePath?: string[];
+  sourceProductId?: number;
+  solidCount?: number;
 }
 export interface AssetIndex {
+  modelId?: string;
   assetPath: string;
   parts: AssetNode[];
   byteLength?: number;
   triangleCount?: number;
   assetBytes?: number;
   sourceUrl?: string;
+  sourceName?: string;
+  sourceSha256?: string;
+  solidCount?: number;
+  bounds?: { min: Vec3; max: Vec3 };
+  dimensions?: Vec3;
 }
 export interface LoadedAssets { model: GLTF; index: AssetIndex; }
 
 export async function loadMachineAssets(signal: AbortSignal, onProgress: (loaded: number, total: number) => void): Promise<LoadedAssets> {
-  const manifestResponse = await fetch("/models/linea-pb/asset-index.json", { signal });
-  if (!manifestResponse.ok) throw new Error(`The CAD manifest is unavailable (HTTP ${manifestResponse.status}). See docs/asset-audit.md for conversion instructions.`);
+  const manifestResponse = await fetch(MACHINE.indexUrl, { signal });
+  if (!manifestResponse.ok) throw new Error(`The machine manifest is unavailable (HTTP ${manifestResponse.status}). Please retry.`);
   const index = await manifestResponse.json() as AssetIndex;
-  if (!Array.isArray(index.parts) || !index.assetPath) throw new Error("The machine asset manifest has an invalid format.");
+  if (index.modelId !== MACHINE.id || !Array.isArray(index.parts) || index.parts.length !== MACHINE.componentCount || !index.assetPath) throw new Error("The custom machine asset manifest has an invalid format.");
   const response = await fetch(index.assetPath, { signal });
   if (!response.ok) throw new Error(`The model is unavailable (HTTP ${response.status}).`);
   const total = Number(response.headers.get("Content-Length")) || index.assetBytes || index.byteLength || 0;
@@ -45,7 +55,8 @@ export async function loadMachineAssets(signal: AbortSignal, onProgress: (loaded
     buffer = joined.buffer; onProgress(loaded, loaded);
   } else { buffer = await response.arrayBuffer(); onProgress(buffer.byteLength, buffer.byteLength); }
   signal.throwIfAborted();
-  const model = await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(buffer, "/models/linea-pb/");
+  const resourceBase = new URL(".", new URL(index.assetPath, document.baseURI)).href;
+  const model = await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(buffer, resourceBase);
   if (signal.aborted) { disposeMachineAssets(model); signal.throwIfAborted(); }
   return { model, index };
 }
@@ -53,10 +64,18 @@ export async function loadMachineAssets(signal: AbortSignal, onProgress: (loaded
 export function disposeMachineAssets(model: GLTF) {
   const geometries = new Set<import("three").BufferGeometry>();
   const materials = new Set<import("three").Material>();
+  const textures = new Set<import("three").Texture>();
   model.scene.traverse((object) => {
     const mesh = object as import("three").Mesh;
-    if (mesh.isMesh) { geometries.add(mesh.geometry); (Array.isArray(mesh.material) ? mesh.material : [mesh.material]).forEach((material) => materials.add(material)); }
+    if (mesh.isMesh) {
+      geometries.add(mesh.geometry);
+      (Array.isArray(mesh.material) ? mesh.material : [mesh.material]).forEach((material) => {
+        materials.add(material);
+        Object.values(material).forEach((value) => { if (value?.isTexture) textures.add(value); });
+      });
+    }
   });
   geometries.forEach((geometry) => geometry.dispose());
   materials.forEach((material) => material.dispose());
+  textures.forEach((texture) => texture.dispose());
 }

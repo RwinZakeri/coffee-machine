@@ -1,31 +1,29 @@
-# coffee-machine
+# Jaxo Coffee Machine — The Anatomy of Espresso
 
-## Linea PB — The Anatomy of Espresso
+A React 19 / TypeScript experience with React Three Fiber, Three.js and GSAP ScrollTrigger. The displayed machine is converted locally from the supplied **espressu unit all parts.stp** design.
 
-A local React / TypeScript / Vite experience using React Three Fiber, Three.js, GSAP and ScrollTrigger. Native scroll controls an independently assembled La Marzocco Linea PB AV 2 Group, with eleven educational chapters and a custom black-and-white exterior.
+## Current model
 
-## What is implemented
+- 23 original component groups containing 56 solid meshes; source proportions and assembled placements retained.
+- Source millimetres and Z-up orientation converted to metres: X right/width, Y up, Z toward the operator, lowest modeled surface at Y=0.
+- Approximately 251 mm wide × 399 mm high × 650 mm deep, including the side lever and portafilter.
+- Six chapters: structure, drainage/cup support, headgroup/lever, display, enclosure/fasteners, and the complete unit.
+- Rigid translation-only exploded presentation. No unverified hinge or locking motion, missing internals, or old procedural group geometry.
+- Authored PBR finishes: the source CAD has no colors or materials.
+- Local Meshopt-compressed GLB, streamed loading, responsive cameras, studio reflections/shadows, reduced motion, keyboard scrubbing, chapter jumps and replay.
 
-- 142 independent nodes converted from the official 2014 `AV_2GR` STEP assembly.
-- 12 separately controlled lower brew-group objects reconstructed from the parts catalogs. Their inferred profiles and placements are explicitly disclosed.
-- Source-based structural outline, nine-piece sight glass, AV controls, steam wands, eight-piece hot-water outlet, trays, shell and portafilters.
-- 171 validated CAD dependency links stage seals, retained filters, controls, tray components and rail fasteners. The two six-part portafilters use shared rigid pivots for a restrained 12° educational locking approach.
-- A paused, deterministic GSAP assembly timeline, native ScrollTrigger progress, independent camera choreography, studio PBR materials and continuous dark/light palettes.
-- Responsive desktop, portrait tablet and mobile composition, adaptive DPR, demand rendering, actual byte loading progress, errors, chapter jumps, replay, internals navigation and an accessible sources dialog.
-- Reduced-motion mode presents completed chapter states with a static camera for each chapter.
+The original STEP is not changed or shipped to the browser. Conversion does not use an external service. The previous Linea PB assets and legacy reconstruction modules are retained for reference but are not loaded by the active experience. Historical documents under `docs/` refer to that previous asset unless labeled custom-machine.
 
-**This is a working source-grounded partial reconstruction, not a complete service-level machine assembly.** Boilers, external pump, full hydraulic network, main PCB/wiring and saturated group necks/caps are missing. See [ASSET_GAPS.md](ASSET_GAPS.md). All eleven chapters are navigable; chapters without geometry explain the asset gap instead of inventing parts.
+## Run
 
-## Run locally
-
-Use Node **22.22+ or 24 LTS**. This workspace also has Node 24.18.0 at `/Users/rwiiinzz/.nvm/versions/node/v24.18.0/bin/node`.
+Use Node 24 LTS (available locally under `/Users/rwiiinzz/.nvm/versions/node/v24.18.0/bin`).
 
 ```sh
 npm ci
 npm run dev -- --host 127.0.0.1
 ```
 
-Open the printed local URL. Scroll, use the chapter dots, or adjust the bottom assembly scrubber. The sources dialog links the original manufacturer resources. Native scrolling is retained.
+Open the printed local URL, then scroll or choose a chapter. Conversion details and authored finishes are recorded in the asset index and integration document.
 
 ```sh
 npm run typecheck
@@ -35,63 +33,38 @@ npm run build
 npm start
 ```
 
-`npm start` serves the React Router production build. Set `PORT=4173` for a separate QA server. The retained React Router framework supplies Vite; it has no server-side data requirements.
+The existing React Router configuration supports local SSR and the Vercel static SPA build. No deployment was performed as part of the replacement.
 
-## Deploy to Vercel
+## Local CAD pipeline
 
-Import `RwinZakeri/coffee-machine` into Vercel and deploy `main`. The checked-in `vercel.json` builds the static SPA with `VERCEL=1 npm run build`, serves `build/client`, and provides the route fallback. No runtime environment variables are required.
+The source inspection and measured coordinates are in [the investigation report](/Users/rwiiinzz/Desktop/coffee-machine/docs/custom-machine-investigation/REPORT.md). That report records the earlier investigation-only stage; the application replacement is now implemented.
 
-## Geometry pipeline
-
-The complete audit is in [docs/asset-audit.md](docs/asset-audit.md). `research/` holds downloaded references and conversion caches; it is excluded from browser assets and Docker context. The runtime GLB is approximately 6.0 MB, reduced from 26.1 MB using Meshopt, with 142 independently named nodes preserved.
+The existing preparation environment includes OCP/Open Cascade, NumPy and trimesh. To recreate it, use `scripts/cad-requirements.txt` in a Python virtual environment. Conversion and optimization are separate steps:
 
 ```sh
-python3 scripts/cad-fetch.py
-python3 -m venv research/cad/.venv
-research/cad/.venv/bin/pip install -r scripts/cad-requirements.txt
-research/cad/.venv/bin/python scripts/cad-inspect.py
-research/cad/.venv/bin/python scripts/cad-convert.py
-node scripts/optimize-model.mjs
+research/cad/.venv/bin/python scripts/convert-custom-machine.py --source '/Users/rwiiinzz/Downloads/espressu unit all parts.stp'
+node scripts/optimize-custom-model.mjs
 npm run assets:audit
 ```
 
-The scripts may require source/output flags; run each with `--help`. Delete or replace `research/cad/verified-2av/machine-uncompressed.glb` after changing the source conversion: the optimizer deliberately retains that uncompressed input for repeatable processing. Tessellation uses 0.6 mm linear and 0.35 rad angular deflection. Meshopt uses 16-bit geometry quantization; measured maximum node-bound error is about 0.021 mm. Original assembled instance translations remain manifest targets. The runtime preserves the static dequantization transform inside each animated wrapper.
+The converter verifies the source SHA-256 against the inspection before tessellating, retains the 23 source product groups and 56 solid children, and excludes auxiliary sketches. The uncompressed reference is kept in ignored `research/cad/custom-espresso/`; only the optimized GLB and index go into `public/models/custom-espresso/`. Optimization verifies group hierarchy, child inventory and world placements after decoding.
 
-Coordinates: metres; +X width, +Y up, +Z toward the operator; foot plane Y=0. The CAD's actual envelope is 710 × 642 × 537 mm including handles/protrusions, while the product drawing nominal envelope is 710 × 590 × 533 mm. The source model is not distorted to force a match. The dimension conflict is documented.
+Source component/solid identifiers, original labels, placement metadata, tessellation settings, authored finishes and mesh statistics are recorded in `public/models/custom-espresso/asset-index.json`. Do not run the legacy `cad-convert.py` or `optimize-model.mjs` for this model: they still describe the archived Linea PB asset.
 
-## Add or replace a component
+## Runtime transform contract
 
-1. Prepare independently named GLB nodes. Preserve their final assembled transforms and use metre units.
-2. Add each node to `public/models/linea-pb/asset-index.json`: `nodeName`, `sourceName`, `sourcePath`, `position`, `quaternion`, `bounds` and evidence/material information.
-3. Update `classifyNode` / `materialForNode` in `app/experience/data/partsManifest.ts` if the assembly family is new. This function produces strongly typed `PartSpec` entries.
-4. Add authoritative provenance and accuracy status. Do not infer an OEM part number from a CAD label without catalog confirmation.
-5. For reconstructed geometry, edit `reconstructedParts.ts` and `BrewGroupGeometry.ts`. Exact nominal dimensions and inferred surfaces have separate classifications.
-6. Add dependencies only where the mounting relationship is known. The validator rejects unknown dependencies, cycles and installation before the dependency completes.
+`partsManifest.ts` maps source product IDs to custom chapters. Each animation wrapper ends at identity; the source component group beneath it retains its exact static bind transform and its solid children retain any quantization transforms. `prepareMachineAssembly.ts` clones the complete hierarchy and inserts these wrappers without replacing imported materials. No node is cloned out of its parent frame or corrected by subtracting only its translation.
 
-CAD approach paths are educational exploded motions, not a certified factory installation sequence. Source hierarchy and placement remain untouched. Small items stay independent within their chapter.
+`AssemblyTimeline.ts` evaluates immutable deltas for arbitrary, reverse and repeated seeks. `CameraRig.tsx` follows the custom chapter poses and fits the assembled envelope plus all components at their current poses, including incoming hidden parts around the reserved text area. `LightingRig.tsx` supplies a local studio environment without a remote HDR dependency.
 
-## Adjust timing and camera
+## Validation
 
-`app/experience/data/chapters.ts` defines opening 0–5%, chapter intervals, camera entry/focus/exit, palette and lighting. `partsManifest.ts` staggers each chapter's CAD nodes; `reconstructedParts.ts` defines dependent group-stack timings. Changing scroll distance is a CSS change to `.journey`; it does not change normalized assembly state.
+`npm test` covers custom source coverage, decoded GLB normals and dimensions, preservation of nested transforms/materials, rigid multi-solid groups and exact bind restoration after arbitrary/reverse seeks, as well as the generic timeline/camera engine. Legacy reconstruction tests remain regression checks for retained reference modules; those objects are not part of the custom scene.
 
-`assemblyMath.ts` calculates immutable position/quaternion/scale states and separate spherical camera interpolation. `CameraRig.tsx` places the subject in a responsive safe area and gently widens overview shots for unavailable internal chapters. `LightingRig.tsx` creates a local studio environment with no remote HDR fetch.
-
-## Verification
-
-The 18 checks in `npm test` cover initial/final targets for all 154 available objects, repeatable arbitrary/reverse seeks, rigid portafilter insertion, quaternion interpolation, dependency order, audited component classification, camera continuity/clearance and catalog-based reconstruction dimensions. `npm run assets:audit` decodes the compressed runtime GLB and compares all 142 node bounds with the original tessellation index. [The part inventory](docs/parts-inventory.csv) records each object's evidence, accuracy, final/exploded transforms, timing and dependencies; regenerate it with `node --import tsx scripts/export-part-inventory.ts` after changing a manifest.
-
-Start a dev or production server, then:
+`npm run assets:audit` decodes the active compressed GLB, checks every component and solid, and compares final world bounds with the inspected CAD. Export the active presentation inventory using:
 
 ```sh
-QA_BASE_URL=http://127.0.0.1:4173 npm run test:browser
+node --import tsx scripts/export-part-inventory.ts
 ```
 
-The browser suite uses the locally installed Google Chrome. On another platform, change `executablePath` in `playwright.config.ts`. Screenshots at 0/25/50/75/100% cover 1920×1080, 1440×900, 768×1024, 390×844 and 360×740. It also checks loading, WebGL context, reverse seeks, no repeated GLB fetch, source-dialog keyboard/focus behavior, chapter controls and reduced motion. Results and measured limitations are in [docs/qa.md](docs/qa.md).
-
-## Provenance and limitations
-
-Research: [sources](docs/sources.md), [mechanical architecture](docs/mechanical-architecture.md), [assembly map](docs/assembly-map.md), [assumptions](docs/assumptions.md).
-
-The manufacturer drawing expressly reserves use/distribution without written permission. Public availability is not an asset license. The source and converted geometry are included for the requested **local development study**; this project has not been deployed. Obtain written authorization or replace the proprietary geometry before redistribution. Third-party runtime library licenses remain their respective package licenses. Catalog-based original reconstructions have dimensional and placement limits described per part.
-
-Software-browser rendering checks are not real-device FPS guarantees or certification of internal mechanical clearances. Exact factory geometry, serial-specific variants, service routing and production licensing remain required for the full brief's final engineering acceptance.
+For browser QA, start the dev server and run `npm run test:browser`. The suite uses the locally installed Chrome and checks rendering/draw calls, five checkpoints, reverse seeks, only custom asset requests, chapter navigation, reduced motion and camera continuity at the portafilter entrance and final reveal. Software-browser timing is not a real-device performance guarantee.

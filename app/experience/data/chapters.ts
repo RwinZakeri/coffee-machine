@@ -13,24 +13,20 @@ const LIGHT_LIGHTING: LightingState = {
   keyColor: "#ffffff", rimColor: "#e8e2d8",
 };
 
-function camera(position: Vec3, target: Vec3 = [0, 0.25, 0], fov = 32): CameraPose {
+function camera(position: Vec3, target: Vec3 = [0, 0.2, 0], fov = 32): CameraPose {
   return { position, target, fov };
 }
 
-// Every entry is the previous chapter's exit, so direct jumps and reverse playback share one path.
+// Shared boundary poses keep direct jumps and reverse playback on the same path.
+// All coordinates follow the inspected custom CAD: Y up, +Z toward the operator.
 const CAMERA_BOUNDARIES: readonly CameraPose[] = [
-  camera([1.16, 0.42, 1.34], [0, 0.08, 0]),
-  camera([0.99, 0.53, 1.11], [0, 0.18, 0]),
-  camera([0.87, 0.66, 0.97], [0, 0.25, 0]),
-  camera([1.01, 0.43, 0.87], [0, 0.23, 0]),
-  camera([-0.83, 0.67, 1.04], [0, 0.31, 0]),
-  camera([0.13, 0.47, 1.24], [0, 0.28, 0.2]),
-  camera([0.85, 0.66, 1.15], [0, 0.31, 0.12]),
-  camera([-0.79, 1.12, 1.12], [0, 0.28, 0]),
-  camera([0.13, 0.53, 1.35], [0, 0.32, 0.16]),
-  camera([0.89, 0.56, 1.28], [0, 0.15, 0.18]),
-  camera([-1.09, 0.72, 1.43], [0, 0.24, 0]),
-  camera([1.12, 0.74, 1.6], [0, 0.25, 0]),
+  camera([0.94, 0.62, 1.14], [0, 0.18, -0.02]),
+  camera([0.84, 0.53, 1.02], [0, 0.17, 0.02]),
+  camera([0.77, 0.62, 1.07], [0, 0.21, 0.06]),
+  camera([0.86, 0.66, 1.04], [0, 0.25, 0.01]),
+  camera([1.02, 0.71, 0.92], [0, 0.24, -0.04]),
+  camera([0.92, 0.63, 1.09], [0, 0.2, 0]),
+  camera([0.96, 0.64, 1.16], [0, 0.2, 0]),
 ];
 
 interface ChapterDefinition {
@@ -45,85 +41,50 @@ interface ChapterDefinition {
 
 const definitions: readonly ChapterDefinition[] = [
   {
-    group: "01_Frame", title: "Structural core",
-    description: "The load-bearing structure establishes the coordinate frame for every system that follows.",
-    parts: ["BaseFrame", "SupportBrackets", "Feet"],
-    focus: camera([0.73, 0.21, 0.93], [0, 0.07, 0]), palette: DARK,
-    choreography: "Base first; support brackets and feet follow their mounting structure.",
+    group: "01_Frame", title: "Structure & supports",
+    description: "A folded steel chassis establishes the structure. Separate mounting bases locate the components around it.",
+    parts: ["steel Chassis espresso", "espresso chekvalve base", "espresso wiring base", "espresso input valve base", "espresso hydrodamper base", "espresso boiler base"],
+    focus: camera([0.78, 0.49, 0.91], [-0.01, 0.18, -0.1]), palette: DARK,
+    choreography: "The chassis and mounting bases approach their measured CAD positions as rigid components.",
   },
   {
-    group: "02_Hydraulics", title: "Water system",
-    description: "Inlets, fittings and valves form the delivery network connecting the machine's major hydraulic systems.",
-    parts: ["WaterInlet", "CopperPipes", "Fittings", "CheckValves", "SolenoidValves"],
-    focus: camera([0.58, 0.48, 0.69], [0, 0.22, 0.02]), palette: DARK,
-    choreography: "Separate fittings approach documented pipe connections; paths remain illustrative where unverified.",
+    group: "09_Drain", title: "Drainage & cup support",
+    description: "The drain basin, grille and raised cup support define the working space beneath the headgroup.",
+    parts: ["espresso drain Mesh", "espresso drain", "espresso group drain", "espresso short cup mesh", "espresso short cup mesh left holder", "espresso short cup mesh right holder", "espresso short cup mesh base"],
+    focus: camera([0.67, 0.5, 1.03], [-0.01, 0.11, 0.15]), palette: NEUTRAL,
+    choreography: "Drainage and cup-support pieces translate into place; their modeled dimensions remain fixed.",
   },
   {
-    group: "03_Pump", title: "Pressure engine",
-    description: "The rotary pump creates brewing pressure. Its mounting and placement depend on the installation configuration.",
-    parts: ["PumpMotor", "PumpHead", "PumpBracket"],
-    focus: camera([0.73, 0.38, 0.64], [0.13, 0.15, 0]), palette: LIGHT,
-    choreography: "Mounting bracket precedes motor and pump head; no unsupported shaft animation.",
+    group: "05_BrewGroups", title: "Headgroup & lever",
+    description: "One headgroup and the side lever give the Jaxo coffee machine its distinctive working arrangement.",
+    parts: ["espresso headgroup", "espresso lever full parts", "espresso solenoid cover"],
+    focus: camera([0.8, 0.56, 1.03], [0.02, 0.22, 0.1]), palette: LIGHT,
+    choreography: "The headgroup, four-solid lever product and solenoid cover settle as rigid products without invented joint motion.",
   },
   {
-    group: "04_Boilers", title: "Thermal heart",
-    description: "Separate steam and coffee boilers give the Linea PB independent thermal systems for milk and extraction.",
-    parts: ["SteamBoiler", "BrewBoiler", "HeatingElements", "Probes", "SafetyValves"],
-    focus: camera([0.71, 0.48, -0.93], [0, 0.31, -0.04]), palette: DARK,
-    choreography: "Boiler bodies settle before heating elements, probes and safety-valve details.",
+    group: "08_ControlPanel", title: "Display assembly",
+    description: "The display base and its separate glass panel complete the interface opening above the headgroup.",
+    parts: ["espresso display base", "espresso display glass "],
+    focus: camera([0.73, 0.65, 1.04], [-0.01, 0.31, -0.02]), palette: LIGHT,
+    choreography: "The display base and glass approach their source positions; no screen graphics or controls are inferred from the CAD.",
   },
   {
-    group: "05_BrewGroups", title: "Extraction core",
-    description: "Two brew groups bring the coffee boiler's stable water supply to the gasket and shower-screen interfaces.",
-    parts: ["GroupHeadLeft", "GroupHeadRight", "ShowerScreenLeft", "ShowerScreenRight", "GasketLeft", "GasketRight"],
-    focus: camera([-0.2, 0.32, 0.82], [-0.12, 0.28, 0.21]), palette: LIGHT,
-    choreography: "Left and right housings arrive with a slight stagger; gaskets precede shower screens.",
+    group: "10_BodyPanels", title: "Enclosure & fasteners",
+    description: "The curved outer cover, sheet-panel bodies and two screw groups complete the enclosure around the structure.",
+    parts: ["espresso unit cover", "espresso right sheet pannel", "Symmetry of espresso screw", "Symmetry of Symmetry of espresso screw"],
+    focus: camera([1.04, 0.67, 0.8], [0, 0.22, -0.08]), palette: DARK,
+    choreography: "The cover, panel product and screw groups translate independently, preserving their internal solid relationships.",
   },
   {
-    group: "06_Steam", title: "Steam control",
-    description: "Steam valves and articulated wands connect the thermal system to milk preparation, with a separate hot-water outlet.",
-    parts: ["SteamValveLeft", "SteamValveRight", "SteamWandLeft", "SteamWandRight", "HotWaterSpout"],
-    focus: camera([0.61, 0.48, 0.87], [0.25, 0.3, 0.16]), palette: LIGHT,
-    choreography: "Valves locate first; rigid wands rotate and translate toward their joints without deformation.",
-  },
-  {
-    group: "07_Electronics", title: "Control intelligence",
-    description: "Boards, sensors and connectors coordinate the automatic machine. Unverified wiring is identified as illustrative.",
-    parts: ["MainPCB", "WiringHarness", "Relays", "Connectors", "Sensors"],
-    focus: camera([-0.52, 0.97, 0.7], [0, 0.32, -0.02]), palette: DARK,
-    choreography: "Board mounting precedes connectors and harness; camera stays outside solid surfaces.",
-  },
-  {
-    group: "08_ControlPanel", title: "Human interface",
-    description: "The central display, gauge and paired AV group controls make the machine's internal precision accessible to the barista.",
-    parts: ["FrontFascia", "ButtonsLeft", "ButtonsRight", "Display", "Gauge", "KnobLeft", "KnobRight"],
-    focus: camera([0.15, 0.48, 0.91], [0, 0.37, 0.23]), palette: LIGHT,
-    choreography: "Fascia carries its visible controls; final screen and gauge design must follow the source references.",
-  },
-  {
-    group: "09_Drain", title: "Drainage",
-    description: "A basin and removable grilles collect discharge below the groups and route it toward the installation drain.",
-    parts: ["DripTrayBasin", "Grilles", "DrainPipe"],
-    focus: camera([0.39, 0.21, 0.89], [0, 0.1, 0.22]), palette: NEUTRAL,
-    choreography: "Drain connection precedes basin and grille; no unsupported internal fluid-flow simulation.",
-  },
-  {
-    group: "10_BodyPanels", title: "Exterior shell",
-    description: "Black and white body panels enclose the assembled systems; the stainless cup tray and rails complete the silhouette.",
-    parts: ["LeftPanel", "RightPanel", "RearPanel", "TopTray", "GuardRails"],
-    focus: camera([0.97, 0.72, -1.2], [0, 0.26, 0]), palette: LIGHT,
-    choreography: "Side and rear panels approach independently; cup tray precedes guard rails; all final panels are opaque.",
-  },
-  {
-    group: "11_Accessories", title: "Final assembly",
-    description: "Two portafilters align with their groups before the final wide reveal of the Linea PB AV 2 Group.",
-    parts: ["PortafilterLeft", "PortafilterRight"],
-    focus: camera([0.15, 0.3, 1.12], [0, 0.2, 0.22]), palette: LIGHT,
-    choreography: "Portafilters enter after their groups; a restrained locking rotation leads into the product reveal.",
+    group: "11_Accessories", title: "The complete unit",
+    description: "A single portafilter completes the custom design. Its projecting handle balances the depth of the curved enclosure.",
+    parts: ["espresso portafilter"],
+    focus: camera([0.78, 0.52, 1.08], [-0.01, 0.2, 0.1]), palette: LIGHT,
+    choreography: "The three-solid portafilter product translates into its CAD placement before a three-quarter product reveal.",
   },
 ];
 
-const CHAPTER_BOUNDARIES = [0.05, 0.13, 0.23, 0.3, 0.41, 0.51, 0.61, 0.7, 0.79, 0.85, 0.94, 1] as const;
+const CHAPTER_BOUNDARIES = [0.05, 0.22, 0.39, 0.57, 0.69, 0.88, 1] as const;
 
 export const CHAPTERS: readonly Chapter[] = definitions.map((definition, index) => {
   const start = CHAPTER_BOUNDARIES[index];
@@ -140,7 +101,7 @@ export const CHAPTERS: readonly Chapter[] = definitions.map((definition, index) 
     start,
     end,
     interval: [start, end] as const,
-    partIds: definition.parts.map((name) => `${definition.group}.${name}`),
+    partIds: definition.parts,
     entryCamera: CAMERA_BOUNDARIES[index],
     focusCamera: definition.focus,
     exitCamera: CAMERA_BOUNDARIES[index + 1],

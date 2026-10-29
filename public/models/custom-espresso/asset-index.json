@@ -1,0 +1,2702 @@
+{
+  "modelId": "custom-espresso",
+  "assetPath": "/models/custom-espresso/machine.glb",
+  "sourceName": "espressu unit all parts.stp",
+  "sourceSha256": "8d2b18ced88ab1bbde9708f2c3ba61bb57dc1d619345c6f6c6243c960503f663",
+  "units": "metres",
+  "coordinateSystem": "+X width/right, +Y up, +Z front; lowest modeled surface Y=0",
+  "sourceToRuntime": {
+    "rotation": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "subtractAfterRotationMm": [
+      13.61664569413712,
+      -2.153657762695405,
+      111.48336485370967
+    ],
+    "scale": 0.001
+  },
+  "bounds": {
+    "min": [
+      -0.12566929312418304,
+      0,
+      -0.32504616066529035
+    ],
+    "max": [
+      0.12566929312418304,
+      0.3994011958865686,
+      0.32504616066529035
+    ]
+  },
+  "dimensions": [
+    0.2513385862483661,
+    0.3994011958865686,
+    0.6500923213305807
+  ],
+  "meshBounds": {
+    "min": [
+      -0.12565482983717824,
+      7.826754049311546e-10,
+      -0.3250402736490808
+    ],
+    "max": [
+      0.12566231926637197,
+      0.3993950223922412,
+      0.32504616066529035
+    ]
+  },
+  "maximumTessellationEnvelopeErrorM": 0.00001446328700480115,
+  "componentCount": 23,
+  "meshCount": 56,
+  "solidCount": 56,
+  "triangleCount": 202481,
+  "assetBytes": 1505560,
+  "uncompressedAssetBytes": 6316964,
+  "deflectionMm": 0.2,
+  "angularDeflectionRadians": 0.25,
+  "materialNote": "Authored visualization finishes; source STEP contains no colors or materials.",
+  "geometryNote": "Actual source solids and occurrences retained. No invented geometry. Curves excluded. Components are rigid presentation units, not certified mechanisms.",
+  "conversionSeconds": 17.988112926483154,
+  "parts": [
+    {
+      "nodeName": "component_000056",
+      "sourceName": "steel Chassis espresso",
+      "sourceProductId": 56,
+      "sourceProductFields": [
+        "steel Chassis espresso",
+        ""
+      ],
+      "position": [
+        -0.013616645694141706,
+        0.17365365776269542,
+        -0.11273336480412346
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.09761664579414629,
+          0.00015365766269540517,
+          -0.2664833648547142
+        ],
+        "max": [
+          0.07038335440586288,
+          0.3471536578626954,
+          0.04101663524646727
+        ]
+      },
+      "sourceBoundsMm": [
+        -155.0000000010045,
+        -84.00000010000917,
+        -2.0000001,
+        152.50000010017695,
+        84.0000001,
+        345.0000001
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          -155.0000000010045,
+          -84.00000010000917,
+          -2.0000001
+        ],
+        [
+          152.50000010017695,
+          84.0000001,
+          345.0000001
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.09761664569414032,
+          0.00015365776269540455,
+          -0.26648336485470964
+        ],
+        "max": [
+          0.07038335430586289,
+          0.3471536577626954,
+          0.04101663514632952
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.0013775225692356e-10,
+      "sourcePath": [
+        "espressu unit all parts",
+        "steel Chassis espresso"
+      ],
+      "sourcePlacement": {
+        "id": 13561,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 11792,
+      "solids": [
+        {
+          "nodeName": "component_000056_solid_13553",
+          "sourceSolidId": 13553,
+          "sourceName": "PartBody",
+          "triangleCount": 11792,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_013573",
+      "sourceName": "espresso chekvalve base",
+      "sourceProductId": 13573,
+      "sourceProductFields": [
+        "espresso chekvalve base",
+        ""
+      ],
+      "position": [
+        -0.08679542906018431,
+        0.18319960207669428,
+        -0.17134341124040967
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.09761664569343713,
+          0.16569960197669314,
+          -0.18384341134040966
+        ],
+        "max": [
+          -0.07597421242693148,
+          0.2006996021766954,
+          -0.15884341114040967
+        ]
+      },
+      "sourceBoundsMm": [
+        -72.3600464867,
+        -83.9999999993,
+        163.54594421399773,
+        -47.3600462867,
+        -62.35756673279436,
+        198.545944414
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          -72.3600464867,
+          -83.9999999993,
+          163.54594421399773
+        ],
+        [
+          -47.3600462867,
+          -62.35756673279436,
+          198.545944414
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.09761664569343713,
+          0.16569960207669543,
+          -0.1838434112404097
+        ],
+        "max": [
+          -0.07597421252693153,
+          0.2006996020766954,
+          -0.15884341124040968
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.0000228423123758e-10,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso chekvalve base"
+      ],
+      "sourcePlacement": {
+        "id": 14604,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 654,
+      "solids": [
+        {
+          "nodeName": "component_013573_solid_14596",
+          "sourceSolidId": 14596,
+          "sourceName": "PartBody",
+          "triangleCount": 654,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_014616",
+      "sourceName": "espresso wiring base",
+      "sourceProductId": 14616,
+      "sourceProductFields": [
+        "espresso wiring base",
+        ""
+      ],
+      "position": [
+        -0.05125537503440212,
+        0.031153657762695405,
+        -0.20741192320350968
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.09761664579343712,
+          0.030153657662695406,
+          -0.22741192330370968
+        ],
+        "max": [
+          -0.0048941042753671195,
+          0.0321536578626954,
+          -0.18741192310330967
+        ]
+      },
+      "sourceBoundsMm": [
+        -115.92855845,
+        -84.0000000993,
+        27.9999999,
+        -75.9285582496,
+        8.72254141877,
+        30.0000001
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          -115.92855845,
+          -84.0000000993,
+          27.9999999
+        ],
+        [
+          -75.9285582496,
+          8.72254141877,
+          30.0000001
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.09761664569343713,
+          0.030153657762695407,
+          -0.22741192320370968
+        ],
+        "max": [
+          -0.004894104375367119,
+          0.0321536577626954,
+          -0.18741192320330968
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.000000082740371e-10,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso wiring base"
+      ],
+      "sourcePlacement": {
+        "id": 15264,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 566,
+      "solids": [
+        {
+          "nodeName": "component_014616_solid_15256",
+          "sourceSolidId": 15256,
+          "sourceName": "PartBody",
+          "triangleCount": 566,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_015276",
+      "sourceName": "espresso input valve base",
+      "sourceProductId": 15276,
+      "sourceProductFields": [
+        "espresso input valve base",
+        ""
+      ],
+      "position": [
+        0.05254516650946288,
+        0.15246038823482427,
+        -0.24115743338227966
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          0.03470697871306288,
+          0.13546038813482314,
+          -0.25615743348227965
+        ],
+        "max": [
+          0.07038335430586289,
+          0.1694603883348254,
+          -0.22615743328227966
+        ]
+      },
+      "sourceBoundsMm": [
+        -144.67406862857,
+        48.3236244072,
+        133.30673037212773,
+        -114.67406842857001,
+        84,
+        167.30673057213
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          -144.67406862857,
+          48.3236244072,
+          133.30673037212773
+        ],
+        [
+          -114.67406842857001,
+          84,
+          167.30673057213
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          0.03470697881306288,
+          0.13546038823482542,
+          -0.2561574333822797
+        ],
+        "max": [
+          0.07038335430586289,
+          0.16946038823482543,
+          -0.2261574333822797
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.0000228423123758e-10,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso input valve base"
+      ],
+      "sourcePlacement": {
+        "id": 16165,
+        "origin": [
+          4.66174768543,
+          0,
+          3.18559669613
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 250,
+      "solids": [
+        {
+          "nodeName": "component_015276_solid_16157",
+          "sourceSolidId": 16157,
+          "sourceName": "PartBody",
+          "triangleCount": 250,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_016177",
+      "sourceName": "espresso hydrodamper base",
+      "sourceProductId": 16177,
+      "sourceProductFields": [
+        "espresso hydrodamper base",
+        ""
+      ],
+      "position": [
+        0.04310226914009894,
+        0.16334746376465237,
+        -0.17145015950540968
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          0.015782746582334483,
+          0.162347426660367,
+          -0.19706753652031023
+        ],
+        "max": [
+          0.07042179169786339,
+          0.16434750086893776,
+          -0.14583278249050913
+        ]
+      },
+      "sourceBoundsMm": [
+        -85.58417166660055,
+        29.399392276471602,
+        160.1937688976716,
+        -34.34941763679945,
+        84.0384373920005,
+        162.19384310624235
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          -85.58417166660055,
+          29.399392276471602,
+          160.1937688976716
+        ],
+        [
+          -34.34941763679945,
+          84.0384373920005,
+          162.19384310624235
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          0.01578274658236288,
+          0.16234742666069543,
+          -0.1970675364203097
+        ],
+        "max": [
+          0.07042179159786288,
+          0.16434750076869542,
+          -0.1458327825905097
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.0024234220473716e-10,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso hydrodamper base"
+      ],
+      "sourcePlacement": {
+        "id": 16828,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 592,
+      "solids": [
+        {
+          "nodeName": "component_016177_solid_16820",
+          "sourceSolidId": 16820,
+          "sourceName": "PartBody",
+          "triangleCount": 592,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_016840",
+      "sourceName": "espresso boiler base",
+      "sourceProductId": 16840,
+      "sourceProductFields": [
+        "espresso boiler base",
+        ""
+      ],
+      "position": [
+        -0.01361664569413712,
+        0.2583977628784554,
+        -0.08100742935381967
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.09761664579343712,
+          0.2573977627784554,
+          -0.10600742945381968
+        ],
+        "max": [
+          0.07038335440516288,
+          0.25939776297845546,
+          -0.05600742925381967
+        ]
+      },
+      "sourceBoundsMm": [
+        5.475935399889999,
+        -84.0000000993,
+        255.24410501576,
+        55.47593559989,
+        84.0000000993,
+        257.24410521576004
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          5.475935399889999,
+          -84.0000000993,
+          255.24410501576
+        ],
+        [
+          55.47593559989,
+          84.0000000993,
+          257.24410521576004
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.09761664569343713,
+          0.2573977628784554,
+          -0.10600742935381968
+        ],
+        "max": [
+          0.07038335430516289,
+          0.2593977628784554,
+          -0.05600742935381967
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.0000006378518833e-10,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso boiler base"
+      ],
+      "sourcePlacement": {
+        "id": 17719,
+        "origin": [
+          7.97593549989,
+          0,
+          4.24410511576
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 2,
+      "triangleCount": 568,
+      "solids": [
+        {
+          "nodeName": "component_016840_solid_17278",
+          "sourceSolidId": 17278,
+          "sourceName": "PartBody.1",
+          "triangleCount": 284,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_016840_solid_17713",
+          "sourceSolidId": 17713,
+          "sourceName": "PartBody.2",
+          "triangleCount": 284,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_017731",
+      "sourceName": "espresso drain Mesh",
+      "sourceProductId": 17731,
+      "sourceProductFields": [
+        "espresso drain Mesh",
+        ""
+      ],
+      "position": [
+        -0.013616645694137175,
+        0.043478179167895405,
+        0.1606790286782903
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.12061664579413718,
+          0.0429781790678954,
+          0.05387518607129033
+        ],
+        "max": [
+          0.09338335440586283,
+          0.043978179267895406,
+          0.26748287128529025
+        ]
+      },
+      "sourceBoundsMm": [
+        165.358550925,
+        -107.00000010000007,
+        40.8245213052,
+        378.96623613899993,
+        107.00000009999995,
+        41.8245215052
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          165.358550925,
+          -107.00000010000007,
+          40.8245213052
+        ],
+        [
+          378.96623613899993,
+          107.00000009999995,
+          41.8245215052
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.12061664569413712,
+          0.042978179167895404,
+          0.05387518617129033
+        ],
+        "max": [
+          0.09338335430586288,
+          0.043978179167895405,
+          0.2674828711852904
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.0000006378518833e-10,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso drain Mesh"
+      ],
+      "sourcePlacement": {
+        "id": 31101,
+        "origin": [
+          0,
+          0,
+          -10.1754785948
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 6524,
+      "solids": [
+        {
+          "nodeName": "component_017731_solid_31073",
+          "sourceSolidId": 31073,
+          "sourceName": "PartBody",
+          "triangleCount": 6524,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_031113",
+      "sourceName": "espresso drain",
+      "sourceProductId": 31113,
+      "sourceProductFields": [
+        "espresso drain",
+        ""
+      ],
+      "position": [
+        -0.01361664569413712,
+        0.023153657762695404,
+        0.16087518612129034
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.12311664569413712,
+          0.002153657762695405,
+          0.05137518607129033
+        ],
+        "max": [
+          0.09588335430586288,
+          0.044153657762695406,
+          0.27037518617129036
+        ]
+      },
+      "sourceBoundsMm": [
+        162.858550925,
+        -109.5,
+        0,
+        381.858551025,
+        109.5,
+        42
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          162.858550925,
+          -109.5,
+          0
+        ],
+        [
+          381.858551025,
+          109.5,
+          42
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.12301798249354975,
+          0.002153657762695405,
+          0.051375186171290325
+        ],
+        "max": [
+          0.09578469110527552,
+          0.044153657762695406,
+          0.27037518617129036
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 0.000098663200587365,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso drain"
+      ],
+      "sourcePlacement": {
+        "id": 31367,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 5836,
+      "solids": [
+        {
+          "nodeName": "component_031113_solid_31359",
+          "sourceSolidId": 31359,
+          "sourceName": "PartBody",
+          "triangleCount": 5836,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_031379",
+      "sourceName": "espresso group drain",
+      "sourceProductId": 31379,
+      "sourceProductFields": [
+        "espresso group drain",
+        ""
+      ],
+      "position": [
+        -0.013616645694137118,
+        0.08698516411054598,
+        0.07349246589429032
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.026318351616337117,
+          0.04298516411038412,
+          0.062492465894267754
+        ],
+        "max": [
+          -0.0009149397719371191,
+          0.13098516411070785,
+          0.08449246589431289
+        ]
+      },
+      "sourceBoundsMm": [
+        173.97583074797743,
+        -12.7017059222,
+        40.831506347688716,
+        195.97583074802256,
+        12.7017059222,
+        128.83150634801243
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          173.97583074797743,
+          -12.7017059222,
+          40.831506347688716
+        ],
+        [
+          195.97583074802256,
+          12.7017059222,
+          128.83150634801243
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.026318351616337117,
+          0.04298516411038421,
+          0.06249246589429032
+        ],
+        "max": [
+          -0.0009149397719371191,
+          0.1309851641106954,
+          0.08449246589429033
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 2.2565282975506307e-14,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso group drain"
+      ],
+      "sourcePlacement": {
+        "id": 31727,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 1570,
+      "solids": [
+        {
+          "nodeName": "component_031379_solid_31719",
+          "sourceSolidId": 31719,
+          "sourceName": "PartBody",
+          "triangleCount": 1570,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_031739",
+      "sourceName": "espresso short cup mesh",
+      "sourceProductId": 31739,
+      "sourceProductFields": [
+        "espresso short cup mesh",
+        ""
+      ],
+      "position": [
+        -0.01361664569413712,
+        0.12293516411069655,
+        0.1353846320327824
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.06361664569413712,
+          0.11468516411069539,
+          0.08427679817027445
+        ],
+        "max": [
+          0.03638335430586288,
+          0.1311851641106977,
+          0.18649246589529034
+        ]
+      },
+      "sourceBoundsMm": [
+        195.76016302398412,
+        -50,
+        112.53150634799998,
+        297.975830749,
+        50,
+        129.03150634800227
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          195.76016302398412,
+          -50,
+          112.53150634799998
+        ],
+        [
+          297.975830749,
+          50,
+          129.03150634800227
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.06361664569413712,
+          0.1146851641106954,
+          0.08427679817029034
+        ],
+        "max": [
+          0.03638335430586288,
+          0.13118516411069542,
+          0.18649246589529034
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.5890067039947553e-14,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso short cup mesh"
+      ],
+      "sourcePlacement": {
+        "id": 35933,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 1264,
+      "solids": [
+        {
+          "nodeName": "component_031739_solid_35925",
+          "sourceSolidId": 35925,
+          "sourceName": "PartBody",
+          "triangleCount": 1264,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_035945",
+      "sourceName": "espresso short cup mesh left holder",
+      "sourceProductId": 35945,
+      "sourceProductFields": [
+        "espresso short cup mesh left holder",
+        ""
+      ],
+      "position": [
+        -0.02682030856643712,
+        0.12218516411069541,
+        0.09294246589479031
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.027820308666437123,
+          0.1111851640106954,
+          0.08089246579529032
+        ],
+        "max": [
+          -0.025820308466437118,
+          0.1331851642106954,
+          0.10499246599429031
+        ]
+      },
+      "sourceBoundsMm": [
+        192.375830649,
+        -14.2036629723,
+        109.031506248,
+        216.475830848,
+        -12.203662772300001,
+        131.031506448
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          192.375830649,
+          -14.2036629723,
+          109.031506248
+        ],
+        [
+          216.475830848,
+          -12.203662772300001,
+          131.031506448
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.02782030856643712,
+          0.1111851641106954,
+          0.08089246589529031
+        ],
+        "max": [
+          -0.02582030856643712,
+          0.13318516411069542,
+          0.10499246589429032
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.000000013351432e-10,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso short cup mesh left holder"
+      ],
+      "sourcePlacement": {
+        "id": 36487,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 472,
+      "solids": [
+        {
+          "nodeName": "component_035945_solid_36479",
+          "sourceSolidId": 36479,
+          "sourceName": "PartBody",
+          "triangleCount": 472,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_036499",
+      "sourceName": "espresso short cup mesh right holder",
+      "sourceProductId": 36499,
+      "sourceProductFields": [
+        "espresso short cup mesh right holder",
+        ""
+      ],
+      "position": [
+        -0.00021298282183711948,
+        0.12218516411069541,
+        0.09294246589479031
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.0012129828218371194,
+          0.1111851641106954,
+          0.08089246589529031
+        ],
+        "max": [
+          0.0007870171781628805,
+          0.13318516411069542,
+          0.10499246589429032
+        ]
+      },
+      "sourceBoundsMm": [
+        192.375830749,
+        12.4036628723,
+        109.031506348,
+        216.475830748,
+        14.4036628723,
+        131.031506348
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          192.375830749,
+          12.4036628723,
+          109.031506348
+        ],
+        [
+          216.475830748,
+          14.4036628723,
+          131.031506348
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.0012129828218371194,
+          0.1111851641106954,
+          0.08089246589529031
+        ],
+        "max": [
+          0.0007870171781628805,
+          0.13318516411069542,
+          0.10499246589429032
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 0,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso short cup mesh right holder"
+      ],
+      "sourcePlacement": {
+        "id": 37029,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 452,
+      "solids": [
+        {
+          "nodeName": "component_036499_solid_37021",
+          "sourceSolidId": 37021,
+          "sourceName": "PartBody",
+          "triangleCount": 452,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_037041",
+      "sourceName": "espresso short cup mesh base",
+      "sourceProductId": 37041,
+      "sourceProductFields": [
+        "espresso short cup mesh base",
+        ""
+      ],
+      "position": [
+        -0.01361664569413712,
+        0.13218516411069542,
+        0.06924246589529034
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.03686664579433712,
+          0.1311851640106954,
+          0.04199246579529035
+        ],
+        "max": [
+          0.009633354406062881,
+          0.1331851642106954,
+          0.09649246599529034
+        ]
+      },
+      "sourceBoundsMm": [
+        153.47583064900002,
+        -23.2500001002,
+        129.031506248,
+        207.975830849,
+        23.2500001002,
+        131.031506448
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          153.47583064900002,
+          -23.2500001002,
+          129.031506248
+        ],
+        [
+          207.975830849,
+          23.2500001002,
+          131.031506448
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.036866645694337126,
+          0.13118516411069542,
+          0.041992465895290335
+        ],
+        "max": [
+          0.00963335430606288,
+          0.13318516411069542,
+          0.09649246589529034
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.000000082740371e-10,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso short cup mesh base"
+      ],
+      "sourcePlacement": {
+        "id": 37908,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 436,
+      "solids": [
+        {
+          "nodeName": "component_037041_solid_37900",
+          "sourceSolidId": 37900,
+          "sourceName": "PartBody",
+          "triangleCount": 436,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_037920",
+      "sourceName": "espresso solenoid cover",
+      "sourceProductId": 37920,
+      "sourceProductFields": [
+        "espresso solenoid cover",
+        ""
+      ],
+      "position": [
+        -0.013616645694637115,
+        0.17748516411069543,
+        0.06649246589478919
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.035366645694637114,
+          0.1319851641106954,
+          0.03749246589428805
+        ],
+        "max": [
+          0.008133354305362883,
+          0.22298516411069544,
+          0.09549246589529034
+        ]
+      },
+      "sourceBoundsMm": [
+        148.97583074799772,
+        -21.7500000005,
+        129.831506348,
+        206.975830749,
+        21.7499999995,
+        220.831506348
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          148.97583074799772,
+          -21.7500000005,
+          129.831506348
+        ],
+        [
+          206.975830749,
+          21.7499999995,
+          220.831506348
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.035366645694637114,
+          0.1319851641106954,
+          0.03749246589429032
+        ],
+        "max": [
+          0.008133354305362883,
+          0.22298516411069544,
+          0.09549246589529034
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 2.2690183065776637e-15,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso solenoid cover"
+      ],
+      "sourcePlacement": {
+        "id": 39447,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 440,
+      "solids": [
+        {
+          "nodeName": "component_037920_solid_39439",
+          "sourceSolidId": 39439,
+          "sourceName": "PartBody",
+          "triangleCount": 440,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_039459",
+      "sourceName": "espresso headgroup",
+      "sourceProductId": 39459,
+      "sourceProductFields": [
+        "espresso headgroup",
+        "620424"
+      ],
+      "position": [
+        -0.01361664569413712,
+        0.2578013448763214,
+        0.11641870085069034
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.06230632833893712,
+          0.1888012454239473,
+          0.04107385947829033
+        ],
+        "max": [
+          0.035073036950662884,
+          0.3268014443286955,
+          0.19176354222309036
+        ]
+      },
+      "sourceBoundsMm": [
+        152.557224332,
+        -48.6896826448,
+        186.6475876612519,
+        303.2469070768,
+        48.6896826448,
+        324.6477865660001
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          152.557224332,
+          -48.6896826448,
+          186.6475876612519
+        ],
+        [
+          303.2469070768,
+          48.6896826448,
+          324.6477865660001
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.062296919926620974,
+          0.18880128139425584,
+          0.04107385957829027
+        ],
+        "max": [
+          0.035063631840290224,
+          0.3268014442286954,
+          0.1917635421232903
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 0.000009408412316148917,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso headgroup"
+      ],
+      "sourcePlacement": {
+        "id": 104334,
+        "origin": [
+          152.557224432,
+          0,
+          192.147786466
+        ],
+        "z": [
+          1,
+          0,
+          0
+        ],
+        "x": [
+          0,
+          1,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 52704,
+      "solids": [
+        {
+          "nodeName": "component_039459_solid_104289",
+          "sourceSolidId": 104289,
+          "sourceName": "Thread7",
+          "triangleCount": 52704,
+          "materialGroup": "polished-metal"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_104346",
+      "sourceName": "espresso lever full parts",
+      "sourceProductId": 104346,
+      "sourceProductFields": [
+        "espresso lever full parts",
+        ""
+      ],
+      "position": [
+        0.09866655916312296,
+        0.08700000083319542,
+        0.049375918027722725
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          0.07166382520206288,
+          0.04200000078319541,
+          -0.06377153410510968
+        ],
+        "max": [
+          0.12566929312418304,
+          0.13200000088319544,
+          0.16252337016055513
+        ]
+      },
+      "sourceBoundsMm": [
+        47.71183074859999,
+        81.26017585307,
+        39.8463430205,
+        274.0067350142648,
+        139.28593881832015,
+        129.84634312050002
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          47.71183074859999,
+          85.2804708962,
+          39.8463430205
+        ],
+        [
+          274.0067350142648,
+          139.28593881832015,
+          129.84634312050002
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          0.07166382530206288,
+          0.04204038606743454,
+          -0.06373114882087055
+        ],
+        "max": [
+          0.12566231926637197,
+          0.13196964709724032,
+          0.16251988006422968
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 0.00004038528423913612,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso lever full parts"
+      ],
+      "sourcePlacement": {
+        "id": 106823,
+        "origin": [
+          92.7118307486,
+          85.2804709962,
+          84.8463430205
+        ],
+        "z": [
+          -0.53269599692,
+          0,
+          -0.846306667152
+        ],
+        "x": [
+          -0.846306667152,
+          0,
+          0.53269599692
+        ]
+      },
+      "solidCount": 4,
+      "triangleCount": 7440,
+      "solids": [
+        {
+          "nodeName": "component_104346_solid_105548",
+          "sourceSolidId": 105548,
+          "sourceName": "espresso lever.1",
+          "triangleCount": 3696,
+          "materialGroup": "polished-metal"
+        },
+        {
+          "nodeName": "component_104346_solid_106437",
+          "sourceSolidId": 106437,
+          "sourceName": "Part1.1",
+          "triangleCount": 988,
+          "materialGroup": "polished-metal"
+        },
+        {
+          "nodeName": "component_104346_solid_106619",
+          "sourceSolidId": 106619,
+          "sourceName": "Part2.1",
+          "triangleCount": 992,
+          "materialGroup": "handle-polymer"
+        },
+        {
+          "nodeName": "component_104346_solid_106817",
+          "sourceSolidId": 106817,
+          "sourceName": "Part3.1\\\\PartBody",
+          "triangleCount": 1764,
+          "materialGroup": "handle-polymer"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_106835",
+      "sourceName": "espresso portafilter",
+      "sourceProductId": 106835,
+      "sourceProductFields": [
+        "espresso portafilter",
+        ""
+      ],
+      "position": [
+        -0.013785585062777495,
+        0.20880153889622938,
+        0.2174841877406623
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.05333359270770491,
+          0.18450088581269544,
+          0.10992221481603429
+        ],
+        "max": [
+          0.02576242258214992,
+          0.2331021919797633,
+          0.32504616066529035
+        ]
+      },
+      "sourceBoundsMm": [
+        221.40557966974396,
+        -39.71694701356779,
+        182.34722805,
+        436.529525519,
+        39.379068276287036,
+        230.9485342170679
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          221.40557966974396,
+          -39.71694701356779,
+          182.34722805
+        ],
+        [
+          436.529525519,
+          39.379068276287036,
+          230.9485342170679
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.05333359257763712,
+          0.18450088581269544,
+          0.10995099929429031
+        ],
+        "max": [
+          0.02573004011986288,
+          0.23310166981212138,
+          0.32504616066529035
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 0.00003238246228703945,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso portafilter"
+      ],
+      "sourcePlacement": {
+        "id": 113973,
+        "origin": [
+          328.799937699,
+          0,
+          198.84722805
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 3,
+      "triangleCount": 11401,
+      "solids": [
+        {
+          "nodeName": "component_106835_solid_107022",
+          "sourceSolidId": 107022,
+          "sourceName": "Part1.1",
+          "triangleCount": 876,
+          "materialGroup": "handle-polymer"
+        },
+        {
+          "nodeName": "component_106835_solid_107222",
+          "sourceSolidId": 107222,
+          "sourceName": "Part2.1\\\\PartBody",
+          "triangleCount": 1764,
+          "materialGroup": "handle-polymer"
+        },
+        {
+          "nodeName": "component_106835_solid_113967",
+          "sourceSolidId": 113967,
+          "sourceName": "Breville Naked Porta Filter.1\\\\PortaFilter Head Assembly",
+          "triangleCount": 8761,
+          "materialGroup": "polished-metal"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_113985",
+      "sourceName": "espresso unit cover",
+      "sourceProductId": 113985,
+      "sourceProductFields": [
+        "espresso unit cover",
+        ""
+      ],
+      "position": [
+        -0.011881625887808334,
+        0.1997005979432843,
+        -0.17198121250576853
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.12566929312418304,
+          0,
+          -0.32504616066529035
+        ],
+        "max": [
+          0.10190604134856637,
+          0.3994011958865686,
+          -0.01891626434624672
+        ]
+      },
+      "sourceBoundsMm": [
+        -213.56279581158066,
+        -112.05264743004591,
+        -2.153657762695405,
+        92.56710050746295,
+        115.5226870427035,
+        397.2475381238732
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          -213.56279581158066,
+          -112.05264743004591,
+          -2.153657762695405
+        ],
+        [
+          92.56710050746295,
+          115.5226870427035,
+          397.2475381238732
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.12565482983717824,
+          7.826754049311546e-10,
+          -0.3250402736490808
+        ],
+        "max": [
+          0.10190010835809611,
+          0.3993950223922412,
+          -0.018917463915109678
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 0.00001446328700480115,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso unit cover"
+      ],
+      "sourcePlacement": {
+        "id": 462657,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 51394,
+      "solids": [
+        {
+          "nodeName": "component_113985_solid_462649",
+          "sourceSolidId": 462649,
+          "sourceName": "PartBody",
+          "triangleCount": 51394,
+          "materialGroup": "graphite-enamel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_462669",
+      "sourceName": "espresso display glass ",
+      "sourceProductId": 462669,
+      "sourceProductFields": [
+        "espresso display glass ",
+        ""
+      ],
+      "position": [
+        -0.01361664569413712,
+        0.36993011689796507,
+        -0.050563061509009674
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.09961664597503712,
+          0.3472307710606954,
+          -0.05256306160900967
+        ],
+        "max": [
+          0.07238335458676289,
+          0.3926294627352348,
+          -0.04856306140900967
+        ]
+      },
+      "sourceBoundsMm": [
+        58.9203032447,
+        -86.0000002809,
+        345.077113298,
+        62.920303444700004,
+        86.0000002809,
+        390.4758049725394
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          58.9203032447,
+          -86.0000002809,
+          345.077113298
+        ],
+        [
+          62.920303444700004,
+          86.0000002809,
+          390.4758049725394
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.09961664569373713,
+          0.3472307711606954,
+          -0.05256306150900967
+        ],
+        "max": [
+          0.07238335430546289,
+          0.39262711700237396,
+          -0.04856306150900967
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 0.0000023457328608422756,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso display glass "
+      ],
+      "sourcePlacement": {
+        "id": 463551,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 672,
+      "solids": [
+        {
+          "nodeName": "component_462669_solid_463543",
+          "sourceSolidId": 463543,
+          "sourceName": "PartBody",
+          "triangleCount": 672,
+          "materialGroup": "smoked-glass"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_463563",
+      "sourceName": "espresso display base",
+      "sourceProductId": 463563,
+      "sourceProductFields": [
+        "espresso display base",
+        ""
+      ],
+      "position": [
+        -0.01361664569413712,
+        0.36861186350307196,
+        -0.009571568333859675
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.09428726957372832,
+          0.3460000007836954,
+          -0.05656306160900968
+        ],
+        "max": [
+          0.06705397818545408,
+          0.3912237262224485,
+          0.03741992494129033
+        ]
+      },
+      "sourceBoundsMm": [
+        54.920303244699994,
+        -80.6706238795912,
+        343.846343021,
+        148.903289795,
+        80.6706238795912,
+        389.0700684597531
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          54.920303244699994,
+          -80.6706238795912,
+          343.846343021
+        ],
+        [
+          148.903289795,
+          80.6706238795912,
+          389.0700684597531
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.09428726947343713,
+          0.3460000007836954,
+          -0.05656306150900967
+        ],
+        "max": [
+          0.06705397808516288,
+          0.3912237261216954,
+          0.03741992494129033
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.0075307255164034e-10,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso display base"
+      ],
+      "sourcePlacement": {
+        "id": 464713,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 1,
+      "triangleCount": 624,
+      "solids": [
+        {
+          "nodeName": "component_463563_solid_464705",
+          "sourceSolidId": 464705,
+          "sourceName": "PartBody",
+          "triangleCount": 624,
+          "materialGroup": "display-housing"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_464725",
+      "sourceName": "espresso right sheet pannel",
+      "sourceProductId": 464725,
+      "sourceProductFields": [
+        "espresso right sheet pannel",
+        ""
+      ],
+      "position": [
+        -0.01361664569413712,
+        0.1753018292731954,
+        -0.044241917405274625
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.09861664579413712,
+          0.003403657662695405,
+          -0.13050047005700965
+        ],
+        "max": [
+          0.07138335440586288,
+          0.3472000008836954,
+          0.0420166352464604
+        ]
+      },
+      "sourceBoundsMm": [
+        -19.0171052033,
+        -85.0000001,
+        1.2499999,
+        153.50000010017007,
+        85.0000001,
+        345.046343121
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          -19.0171052033,
+          -85.0000001,
+          1.2499999
+        ],
+        [
+          153.50000010017007,
+          85.0000001,
+          345.046343121
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.09861664569413713,
+          0.003403657762695405,
+          -0.13050046995700967
+        ],
+        "max": [
+          0.07138335430586289,
+          0.3472000007836954,
+          0.04201663514629817
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.0016222573572264e-10,
+      "sourcePath": [
+        "espressu unit all parts",
+        "espresso right sheet pannel"
+      ],
+      "sourcePlacement": {
+        "id": 469476,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 4,
+      "triangleCount": 5942,
+      "solids": [
+        {
+          "nodeName": "component_464725_solid_466059",
+          "sourceSolidId": 466059,
+          "sourceName": "PartBody.1",
+          "triangleCount": 1542,
+          "materialGroup": "graphite-enamel"
+        },
+        {
+          "nodeName": "component_464725_solid_467327",
+          "sourceSolidId": 467327,
+          "sourceName": "PartBody.2",
+          "triangleCount": 1648,
+          "materialGroup": "graphite-enamel"
+        },
+        {
+          "nodeName": "component_464725_solid_468608",
+          "sourceSolidId": 468608,
+          "sourceName": "PartBody.3",
+          "triangleCount": 1660,
+          "materialGroup": "graphite-enamel"
+        },
+        {
+          "nodeName": "component_464725_solid_469470",
+          "sourceSolidId": 469470,
+          "sourceName": "PartBody.4",
+          "triangleCount": 1092,
+          "materialGroup": "graphite-enamel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_469488",
+      "sourceName": "Symmetry of espresso screw",
+      "sourceProductId": 469488,
+      "sourceProductFields": [
+        "Symmetry of espresso screw",
+        ""
+      ],
+      "position": [
+        -0.08172036540543712,
+        0.1918299552467454,
+        -0.024221280228405726
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -0.10161664569413713,
+          0.01663882108979541,
+          -0.09345919560310968
+        ],
+        "max": [
+          -0.06182408511673712,
+          0.3670210894036954,
+          0.04501663514629823
+        ]
+      },
+      "sourceBoundsMm": [
+        18.0241692506,
+        -88,
+        14.4851633271,
+        156.5000000000079,
+        -48.2074394226,
+        364.867431641
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          18.0241692506,
+          -88,
+          14.4851633271
+        ],
+        [
+          156.5000000000079,
+          -48.2074394226,
+          364.867431641
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          -0.10161664569413713,
+          0.01663882108979541,
+          -0.09345919560310968
+        ],
+        "max": [
+          -0.06182408511673712,
+          0.3670210894036954,
+          0.045016635146298174
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 5.551115123125783e-17,
+      "sourcePath": [
+        "espressu unit all parts",
+        "Symmetry of espresso screw"
+      ],
+      "sourcePlacement": {
+        "id": 472814,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 13,
+      "triangleCount": 20444,
+      "solids": [
+        {
+          "nodeName": "component_469488_solid_469828",
+          "sourceSolidId": 469828,
+          "sourceName": "PartBody.1",
+          "triangleCount": 1580,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_469488_solid_470099",
+          "sourceSolidId": 470099,
+          "sourceName": "PartBody.2",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_469488_solid_470343",
+          "sourceSolidId": 470343,
+          "sourceName": "PartBody.3",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_469488_solid_470587",
+          "sourceSolidId": 470587,
+          "sourceName": "PartBody.4",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_469488_solid_470831",
+          "sourceSolidId": 470831,
+          "sourceName": "PartBody.5",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_469488_solid_471075",
+          "sourceSolidId": 471075,
+          "sourceName": "PartBody.6",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_469488_solid_471344",
+          "sourceSolidId": 471344,
+          "sourceName": "PartBody.7",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_469488_solid_471588",
+          "sourceSolidId": 471588,
+          "sourceName": "PartBody.8",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_469488_solid_471832",
+          "sourceSolidId": 471832,
+          "sourceName": "PartBody.9",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_469488_solid_472076",
+          "sourceSolidId": 472076,
+          "sourceName": "PartBody.10",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_469488_solid_472320",
+          "sourceSolidId": 472320,
+          "sourceName": "PartBody.11",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_469488_solid_472564",
+          "sourceSolidId": 472564,
+          "sourceName": "PartBody.12",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_469488_solid_472808",
+          "sourceSolidId": 472808,
+          "sourceName": "PartBody.13",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    },
+    {
+      "nodeName": "component_472826",
+      "sourceName": "Symmetry of Symmetry of espresso screw",
+      "sourceProductId": 472826,
+      "sourceProductFields": [
+        "Symmetry of Symmetry of espresso screw",
+        ""
+      ],
+      "position": [
+        0.05448707401716288,
+        0.1918299551967454,
+        -0.024221280228405726
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "min": [
+          0.034590793728462875,
+          0.016638820989795407,
+          -0.09345919560310968
+        ],
+        "max": [
+          0.07438335430586288,
+          0.3670210894036954,
+          0.04501663514629823
+        ]
+      },
+      "sourceBoundsMm": [
+        18.0241692506,
+        48.2074394226,
+        14.485163227100001,
+        156.5000000000079,
+        88,
+        364.867431641
+      ],
+      "sourceSolidBoundsMm": [
+        [
+          18.0241692506,
+          48.2074394226,
+          14.485163227100001
+        ],
+        [
+          156.5000000000079,
+          88,
+          364.867431641
+        ]
+      ],
+      "meshBounds": {
+        "min": [
+          0.034590793728462875,
+          0.01663882108979541,
+          -0.09345919560310968
+        ],
+        "max": [
+          0.07438335430586288,
+          0.3670210894036954,
+          0.045016635146298174
+        ]
+      },
+      "maximumTessellationEnvelopeErrorM": 1.000000013351432e-10,
+      "sourcePath": [
+        "espressu unit all parts",
+        "Symmetry of Symmetry of espresso screw"
+      ],
+      "sourcePlacement": {
+        "id": 476152,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ]
+      },
+      "solidCount": 13,
+      "triangleCount": 20444,
+      "solids": [
+        {
+          "nodeName": "component_472826_solid_473166",
+          "sourceSolidId": 473166,
+          "sourceName": "PartBody.1",
+          "triangleCount": 1580,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_472826_solid_473437",
+          "sourceSolidId": 473437,
+          "sourceName": "PartBody.2",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_472826_solid_473681",
+          "sourceSolidId": 473681,
+          "sourceName": "PartBody.3",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_472826_solid_473925",
+          "sourceSolidId": 473925,
+          "sourceName": "PartBody.4",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_472826_solid_474169",
+          "sourceSolidId": 474169,
+          "sourceName": "PartBody.5",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_472826_solid_474413",
+          "sourceSolidId": 474413,
+          "sourceName": "PartBody.6",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_472826_solid_474682",
+          "sourceSolidId": 474682,
+          "sourceName": "PartBody.7",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_472826_solid_474926",
+          "sourceSolidId": 474926,
+          "sourceName": "PartBody.8",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_472826_solid_475170",
+          "sourceSolidId": 475170,
+          "sourceName": "PartBody.9",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_472826_solid_475414",
+          "sourceSolidId": 475414,
+          "sourceName": "PartBody.10",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_472826_solid_475658",
+          "sourceSolidId": 475658,
+          "sourceName": "PartBody.11",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_472826_solid_475902",
+          "sourceSolidId": 475902,
+          "sourceName": "PartBody.12",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        },
+        {
+          "nodeName": "component_472826_solid_476146",
+          "sourceSolidId": 476146,
+          "sourceName": "PartBody.13",
+          "triangleCount": 1572,
+          "materialGroup": "brushed-steel"
+        }
+      ],
+      "accuracyStatus": "Verified CAD"
+    }
+  ],
+  "compression": "EXT_meshopt_compression; 16-bit positions; source component hierarchy retained",
+  "maximumCompressionBoundsErrorM": 0.000010556734628353048,
+  "assetSha256": "5dbf6828214309fe9364a79fffa2408ee89f6346e8159f40f15abb58bc736d1a"
+}

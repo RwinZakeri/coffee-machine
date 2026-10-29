@@ -8,4 +8,9 @@
   .final-copy{top:15%;left:7%}.final-copy h2{font-size:56px;margin:24px 0 16px}.final-tagline{font-size:34px;margin-bottom:20px}
   .final-actions{flex-direction:row;align-items:center;gap:24px;margin-top:26px}.final-disclosure{max-width:330px;margin-top:18px}
 }
+.source-list .source-entry{display:flex;align-items:center;gap:22px;padding:20px 0;border-top:1px solid #33372f}.source-entry>span:nth-child(2){flex:1}.source-list .source-entry small{line-height:1.7}
+@media(max-width:600px){.source-list .source-entry{gap:13px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.journey{height:400svh}}
+
+@media(max-width:600px){.chapter-copy{min-height:220px}}
+@media(min-width:601px) and (max-width:900px) and (orientation:portrait){.chapter-copy{min-height:280px}}

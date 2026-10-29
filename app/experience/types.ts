@@ -34,6 +34,7 @@ export interface PartSpec {
   sourcePage: number | null;
   manufacturerPartNumber: string | null;
   accuracyStatus: AccuracyStatus;
+  /** Animated parent-frame target. Custom CAD wrappers end at identity over static source binds. */
   finalPosition: Vec3;
   finalQuaternion: QuaternionTuple;
   finalScale: Vec3;

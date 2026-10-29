@@ -1,0 +1,5825 @@
+{
+  "inspectionDate": "2026-10-29",
+  "scope": "Read-only CAD/application investigation. No GLB conversion or integration performed.",
+  "source": {
+    "path": "/Users/rwiiinzz/Downloads/espressu unit all parts.stp",
+    "bytes": 43118861,
+    "sha256": "8d2b18ced88ab1bbde9708f2c3ba61bb57dc1d619345c6f6c6243c960503f663",
+    "schema": "CONFIG_CONTROL_DESIGN (AP203)",
+    "exporter": "CATIA V5 Release 21 GA",
+    "timestamp": "2026-10-27T09:34:50+00:00"
+  },
+  "summary": {
+    "sourceAssemblyRoots": 1,
+    "sourceChildProducts": 23,
+    "sourceComponentOccurrences": 23,
+    "sourceNestedAssemblyUsages": 0,
+    "solidCount": 56,
+    "faceCount": 4097,
+    "sourceAuxiliaryCurveRepresentations": 3,
+    "xcafAssemblyLikeLabels": 4,
+    "xcafLeaves": 26,
+    "xcafSolidBearingLeaves": 23,
+    "xcafAuxiliaryOnlyLeaves": 3,
+    "allImportedGeometryValid": true,
+    "sourceColorEntities": 0,
+    "importedColorTableEntries": 0
+  },
+  "coordinates": {
+    "sourceUnit": "millimetre",
+    "sourceBoundsMm": [
+      -213.56279581158066,
+      -112.05264743004591,
+      -2.153657762695405,
+      436.529525519,
+      139.28593881832015,
+      397.2475381238732
+    ],
+    "sourceXYZExtentMm": [
+      650.0923213305807,
+      251.33858624836606,
+      399.4011958865686
+    ],
+    "orientationEvidence": "Source Z up and +X front inferred from CAD geometry and inspected B-rep-edge views, not explicit STEP axis semantics.",
+    "sourceToTargetRotation": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "rotationDeterminant": 1,
+    "scale": 0.001,
+    "subtractAfterRotationMm": [
+      13.61664569413712,
+      -2.153657762695405,
+      111.48336485370967
+    ],
+    "targetAxes": "X width/right, Y up, Z front",
+    "targetDimensionsM": [
+      0.2513385862483661,
+      0.3994011958865686,
+      0.6500923213305807
+    ]
+  },
+  "sourceComponents": [
+    {
+      "part": "steel Chassis espresso",
+      "solidCount": 1,
+      "solidIds": [
+        13553
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 13562,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 13561,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 13492,
+      "faceCount": 401,
+      "cartesianPointCount": 2995,
+      "sourceProduct": {
+        "entity": 56,
+        "productFields": [
+          "steel Chassis espresso",
+          ""
+        ]
+      },
+      "importedName": "steel Chassis espresso",
+      "sourceBoundsMm": [
+        -155.0000000010045,
+        -84.00000010000917,
+        -2.0000001,
+        152.50000010017695,
+        84.0000001,
+        345.0000001
+      ],
+      "targetBoundsM": [
+        -0.09761664579414629,
+        0.00015365766269540514,
+        -0.2664833648547142,
+        0.07038335440586288,
+        0.3471536578626954,
+        0.04101663524646727
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:1"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 213,
+        "B_SPLINE_SURFACE_WITH_KNOTS": 26
+      }
+    },
+    {
+      "part": "espresso chekvalve base",
+      "solidCount": 1,
+      "solidIds": [
+        14596
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 14605,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 14604,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 1018,
+      "faceCount": 32,
+      "cartesianPointCount": 276,
+      "sourceProduct": {
+        "entity": 13573,
+        "productFields": [
+          "espresso chekvalve base",
+          ""
+        ]
+      },
+      "importedName": "espresso chekvalve base",
+      "sourceBoundsMm": [
+        -72.3600464867,
+        -83.9999999993,
+        163.54594421399773,
+        -47.3600462867,
+        -62.35756673279436,
+        198.545944414
+      ],
+      "targetBoundsM": [
+        -0.09761664569343712,
+        0.16569960197669314,
+        -0.18384341134040966,
+        -0.07597421242693148,
+        0.2006996021766954,
+        -0.15884341114040967
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:2"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 10,
+        "B_SPLINE_SURFACE_WITH_KNOTS": 4
+      }
+    },
+    {
+      "part": "espresso wiring base",
+      "solidCount": 1,
+      "solidIds": [
+        15256
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 15265,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 15264,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 635,
+      "faceCount": 20,
+      "cartesianPointCount": 135,
+      "sourceProduct": {
+        "entity": 14616,
+        "productFields": [
+          "espresso wiring base",
+          ""
+        ]
+      },
+      "importedName": "espresso wiring base",
+      "sourceBoundsMm": [
+        -115.92855845,
+        -84.0000000993,
+        27.9999999,
+        -75.9285582496,
+        8.72254141877,
+        30.0000001
+      ],
+      "targetBoundsM": [
+        -0.09761664579343711,
+        0.030153657662695406,
+        -0.22741192330370968,
+        -0.0048941042753671195,
+        0.0321536578626954,
+        -0.18741192310330967
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:3"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 10
+      }
+    },
+    {
+      "part": "espresso input valve base",
+      "solidCount": 1,
+      "solidIds": [
+        16157
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 16166,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 16165,
+        "origin": [
+          4.66174768543,
+          0.0,
+          3.18559669613
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 876,
+      "faceCount": 28,
+      "cartesianPointCount": 242,
+      "sourceProduct": {
+        "entity": 15276,
+        "productFields": [
+          "espresso input valve base",
+          ""
+        ]
+      },
+      "importedName": "espresso input valve base",
+      "sourceBoundsMm": [
+        -144.67406862857,
+        48.3236244072,
+        133.30673037212773,
+        -114.67406842857001,
+        84.0,
+        167.30673057213
+      ],
+      "targetBoundsM": [
+        0.03470697871306288,
+        0.13546038813482314,
+        -0.25615743348227965,
+        0.07038335430586289,
+        0.1694603883348254,
+        -0.22615743328227966
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:4"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "B_SPLINE_SURFACE_WITH_KNOTS": 4,
+        "CYLINDRICAL_SURFACE": 2
+      }
+    },
+    {
+      "part": "espresso hydrodamper base",
+      "solidCount": 1,
+      "solidIds": [
+        16820
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 16829,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 16828,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 638,
+      "faceCount": 20,
+      "cartesianPointCount": 136,
+      "sourceProduct": {
+        "entity": 16177,
+        "productFields": [
+          "espresso hydrodamper base",
+          ""
+        ]
+      },
+      "importedName": "espresso hydrodamper base",
+      "sourceBoundsMm": [
+        -85.58417166660055,
+        29.399392276471602,
+        160.1937688976716,
+        -34.34941763679945,
+        84.0384373920005,
+        162.19384310624235
+      ],
+      "targetBoundsM": [
+        0.015782746582334483,
+        0.162347426660367,
+        -0.19706753652031023,
+        0.07042179169786339,
+        0.16434750086893776,
+        -0.14583278249050913
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:5"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 6
+      }
+    },
+    {
+      "part": "espresso boiler base",
+      "solidCount": 2,
+      "solidIds": [
+        17278,
+        17713
+      ],
+      "solidNames": [
+        "PartBody.1",
+        "PartBody.2"
+      ],
+      "sourceAxes": {
+        "id": 17720,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 17719,
+        "origin": [
+          7.97593549989,
+          0.0,
+          4.24410511576
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 866,
+      "faceCount": 28,
+      "cartesianPointCount": 186,
+      "sourceProduct": {
+        "entity": 16840,
+        "productFields": [
+          "espresso boiler base",
+          ""
+        ]
+      },
+      "importedName": "espresso boiler base",
+      "sourceBoundsMm": [
+        5.475935399889999,
+        -84.0000000993,
+        255.24410501576,
+        55.47593559989,
+        84.0000000993,
+        257.24410521576004
+      ],
+      "targetBoundsM": [
+        -0.09761664579343711,
+        0.2573977627784554,
+        -0.10600742945381966,
+        0.07038335440516287,
+        0.25939776297845546,
+        -0.05600742925381967
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:6"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 6
+      }
+    },
+    {
+      "part": "espresso drain Mesh",
+      "solidCount": 1,
+      "solidIds": [
+        31073
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 31102,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 31101,
+        "origin": [
+          0.0,
+          0.0,
+          -10.1754785948
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 13337,
+      "faceCount": 391,
+      "cartesianPointCount": 2396,
+      "sourceProduct": {
+        "entity": 17731,
+        "productFields": [
+          "espresso drain Mesh",
+          ""
+        ]
+      },
+      "importedName": "espresso drain Mesh",
+      "sourceBoundsMm": [
+        165.358550925,
+        -107.00000010000007,
+        40.8245213052,
+        378.96623613899993,
+        107.00000009999995,
+        41.8245215052
+      ],
+      "targetBoundsM": [
+        -0.12061664579413718,
+        0.0429781790678954,
+        0.053875186071290326,
+        0.09338335440586283,
+        0.043978179267895406,
+        0.26748287128529025
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:8:1"
+      ],
+      "importedAuxiliaryLabels": [
+        "0:1:1:8:2"
+      ],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 222
+      }
+    },
+    {
+      "part": "espresso drain",
+      "solidCount": 1,
+      "solidIds": [
+        31359
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 31368,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 31367,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 241,
+      "faceCount": 11,
+      "cartesianPointCount": 40,
+      "sourceProduct": {
+        "entity": 31113,
+        "productFields": [
+          "espresso drain",
+          ""
+        ]
+      },
+      "importedName": "espresso drain",
+      "sourceBoundsMm": [
+        162.858550925,
+        -109.5,
+        0.0,
+        381.858551025,
+        109.5,
+        42.0
+      ],
+      "targetBoundsM": [
+        -0.12311664569413712,
+        0.002153657762695405,
+        0.05137518607129033,
+        0.09588335430586288,
+        0.044153657762695406,
+        0.27037518617129036
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:8"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "TOROIDAL_SURFACE": 3,
+        "CYLINDRICAL_SURFACE": 2
+      }
+    },
+    {
+      "part": "espresso group drain",
+      "solidCount": 1,
+      "solidIds": [
+        31719
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 31728,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 31727,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 335,
+      "faceCount": 13,
+      "cartesianPointCount": 58,
+      "sourceProduct": {
+        "entity": 31379,
+        "productFields": [
+          "espresso group drain",
+          ""
+        ]
+      },
+      "importedName": "espresso group drain",
+      "sourceBoundsMm": [
+        173.97583074797743,
+        -12.7017059222,
+        40.831506347688716,
+        195.97583074802256,
+        12.7017059222,
+        128.83150634801243
+      ],
+      "targetBoundsM": [
+        -0.026318351616337117,
+        0.04298516411038412,
+        0.062492465894267754,
+        -0.0009149397719371191,
+        0.13098516411070785,
+        0.08449246589431289
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:9"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 1,
+        "TOROIDAL_SURFACE": 2
+      }
+    },
+    {
+      "part": "espresso short cup mesh",
+      "solidCount": 1,
+      "solidIds": [
+        35925
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 35934,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 35933,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 4181,
+      "faceCount": 138,
+      "cartesianPointCount": 733,
+      "sourceProduct": {
+        "entity": 31739,
+        "productFields": [
+          "espresso short cup mesh",
+          ""
+        ]
+      },
+      "importedName": "espresso short cup mesh",
+      "sourceBoundsMm": [
+        195.76016302398412,
+        -50.0,
+        112.53150634799998,
+        297.975830749,
+        50.0,
+        129.03150634800227
+      ],
+      "targetBoundsM": [
+        -0.06361664569413712,
+        0.11468516411069538,
+        0.08427679817027445,
+        0.03638335430586288,
+        0.1311851641106977,
+        0.18649246589529034
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:10"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 14
+      }
+    },
+    {
+      "part": "espresso short cup mesh left holder",
+      "solidCount": 1,
+      "solidIds": [
+        36479
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 36488,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 36487,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 529,
+      "faceCount": 17,
+      "cartesianPointCount": 112,
+      "sourceProduct": {
+        "entity": 35945,
+        "productFields": [
+          "espresso short cup mesh left holder",
+          ""
+        ]
+      },
+      "importedName": "espresso short cup mesh left holder",
+      "sourceBoundsMm": [
+        192.375830649,
+        -14.2036629723,
+        109.031506248,
+        216.475830848,
+        -12.203662772300001,
+        131.031506448
+      ],
+      "targetBoundsM": [
+        -0.027820308666437123,
+        0.1111851640106954,
+        0.08089246579529032,
+        -0.025820308466437118,
+        0.1331851642106954,
+        0.10499246599429031
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:11"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 6
+      }
+    },
+    {
+      "part": "espresso short cup mesh right holder",
+      "solidCount": 1,
+      "solidIds": [
+        37021
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 37030,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 37029,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 517,
+      "faceCount": 17,
+      "cartesianPointCount": 92,
+      "sourceProduct": {
+        "entity": 36499,
+        "productFields": [
+          "espresso short cup mesh right holder",
+          ""
+        ]
+      },
+      "importedName": "espresso short cup mesh right holder",
+      "sourceBoundsMm": [
+        192.375830749,
+        12.4036628723,
+        109.031506348,
+        216.475830748,
+        14.4036628723,
+        131.031506348
+      ],
+      "targetBoundsM": [
+        -0.0012129828218371194,
+        0.1111851641106954,
+        0.08089246589529031,
+        0.0007870171781628805,
+        0.13318516411069542,
+        0.10499246589429032
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:12"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 6
+      }
+    },
+    {
+      "part": "espresso short cup mesh base",
+      "solidCount": 1,
+      "solidIds": [
+        37900
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 37909,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 37908,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 854,
+      "faceCount": 26,
+      "cartesianPointCount": 174,
+      "sourceProduct": {
+        "entity": 37041,
+        "productFields": [
+          "espresso short cup mesh base",
+          ""
+        ]
+      },
+      "importedName": "espresso short cup mesh base",
+      "sourceBoundsMm": [
+        153.47583064900002,
+        -23.2500001002,
+        129.031506248,
+        207.975830849,
+        23.2500001002,
+        131.031506448
+      ],
+      "targetBoundsM": [
+        -0.03686664579433712,
+        0.1311851640106954,
+        0.04199246579529034,
+        0.009633354406062881,
+        0.1331851642106954,
+        0.09649246599529034
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:13"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 4
+      }
+    },
+    {
+      "part": "espresso solenoid cover",
+      "solidCount": 1,
+      "solidIds": [
+        39439
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 39448,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 39447,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 1514,
+      "faceCount": 52,
+      "cartesianPointCount": 268,
+      "sourceProduct": {
+        "entity": 37920,
+        "productFields": [
+          "espresso solenoid cover",
+          ""
+        ]
+      },
+      "importedName": "espresso solenoid cover",
+      "sourceBoundsMm": [
+        148.97583074799772,
+        -21.7500000005,
+        129.831506348,
+        206.975830749,
+        21.7499999995,
+        220.831506348
+      ],
+      "targetBoundsM": [
+        -0.035366645694637114,
+        0.1319851641106954,
+        0.03749246589428805,
+        0.008133354305362881,
+        0.2229851641106954,
+        0.09549246589529034
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:14"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 6
+      }
+    },
+    {
+      "part": "espresso headgroup",
+      "solidCount": 1,
+      "solidIds": [
+        104289
+      ],
+      "solidNames": [
+        "Thread7"
+      ],
+      "sourceAxes": {
+        "id": 104335,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 104334,
+        "origin": [
+          152.557224432,
+          0.0,
+          192.147786466
+        ],
+        "z": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "x": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "entityCount": 64825,
+      "faceCount": 1870,
+      "cartesianPointCount": 34698,
+      "sourceProduct": {
+        "entity": 39459,
+        "productFields": [
+          "espresso headgroup",
+          "620424"
+        ]
+      },
+      "importedName": "620424",
+      "sourceBoundsMm": [
+        152.557224332,
+        -48.6896826448,
+        186.6475876612519,
+        303.2469070768,
+        48.6896826448,
+        324.6477865660001
+      ],
+      "targetBoundsM": [
+        -0.06230632833893712,
+        0.1888012454239473,
+        0.04107385947829033,
+        0.035073036950662884,
+        0.32680144432869546,
+        0.19176354222309036
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:18:1"
+      ],
+      "importedAuxiliaryLabels": [
+        "0:1:1:18:2"
+      ],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 196,
+        "B_SPLINE_SURFACE_WITH_KNOTS": 15,
+        "TOROIDAL_SURFACE": 16,
+        "CONICAL_SURFACE": 57,
+        "SPHERICAL_SURFACE": 8
+      }
+    },
+    {
+      "part": "espresso lever full parts",
+      "solidCount": 4,
+      "solidIds": [
+        105548,
+        106437,
+        106619,
+        106817
+      ],
+      "solidNames": [
+        "espresso lever.1",
+        "Part1.1",
+        "Part2.1",
+        "Part3.1\\\\PartBody"
+      ],
+      "sourceAxes": {
+        "id": 106824,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 106823,
+        "origin": [
+          92.7118307486,
+          85.2804709962,
+          84.8463430205
+        ],
+        "z": [
+          -0.53269599692,
+          0.0,
+          -0.846306667152
+        ],
+        "x": [
+          -0.846306667152,
+          0.0,
+          0.53269599692
+        ]
+      },
+      "entityCount": 2399,
+      "faceCount": 62,
+      "cartesianPointCount": 1204,
+      "sourceProduct": {
+        "entity": 104346,
+        "productFields": [
+          "espresso lever full parts",
+          ""
+        ]
+      },
+      "importedName": "espresso lever full parts",
+      "sourceBoundsMm": [
+        47.71183074859999,
+        81.26017585307,
+        39.8463430205,
+        274.0067350142648,
+        139.28593881832015,
+        129.84634312050002
+      ],
+      "targetBoundsM": [
+        0.06764353015893287,
+        0.04200000078319541,
+        -0.06377153410510968,
+        0.12566929312418304,
+        0.13200000088319544,
+        0.16252337016055513
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:21:1"
+      ],
+      "importedAuxiliaryLabels": [
+        "0:1:1:21:2"
+      ],
+      "selectedSurfaceEntityCounts": {
+        "CONICAL_SURFACE": 3,
+        "CYLINDRICAL_SURFACE": 17,
+        "TOROIDAL_SURFACE": 4,
+        "B_SPLINE_SURFACE_WITH_KNOTS": 9
+      }
+    },
+    {
+      "part": "espresso portafilter",
+      "solidCount": 3,
+      "solidIds": [
+        107022,
+        107222,
+        113967
+      ],
+      "solidNames": [
+        "Part1.1",
+        "Part2.1\\\\PartBody",
+        "Breville Naked Porta Filter.1\\\\PortaFilter Head Assembly"
+      ],
+      "sourceAxes": {
+        "id": 113974,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 113973,
+        "origin": [
+          328.799937699,
+          0.0,
+          198.84722805
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 7125,
+      "faceCount": 136,
+      "cartesianPointCount": 4468,
+      "sourceProduct": {
+        "entity": 106835,
+        "productFields": [
+          "espresso portafilter",
+          ""
+        ]
+      },
+      "importedName": "espresso portafilter",
+      "sourceBoundsMm": [
+        221.40557966974396,
+        -39.71694701356779,
+        182.34722805,
+        436.529525519,
+        39.379068276287036,
+        230.9485342170679
+      ],
+      "targetBoundsM": [
+        -0.05333359270770491,
+        0.18450088581269544,
+        0.10992221481603429,
+        0.025762422582149915,
+        0.2331021919797633,
+        0.32504616066529035
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:17"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 22,
+        "CONICAL_SURFACE": 9,
+        "TOROIDAL_SURFACE": 2,
+        "B_SPLINE_SURFACE_WITH_KNOTS": 54,
+        "SPHERICAL_SURFACE": 2
+      }
+    },
+    {
+      "part": "espresso unit cover",
+      "solidCount": 1,
+      "solidIds": [
+        462649
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 462658,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 462657,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 348659,
+      "faceCount": 344,
+      "cartesianPointCount": 342128,
+      "sourceProduct": {
+        "entity": 113985,
+        "productFields": [
+          "espresso unit cover",
+          ""
+        ]
+      },
+      "importedName": "espresso unit cover",
+      "sourceBoundsMm": [
+        -213.56279581158066,
+        -112.05264743004591,
+        -2.153657762695405,
+        92.56710050746295,
+        115.5226870427035,
+        397.2475381238732
+      ],
+      "targetBoundsM": [
+        -0.12566929312418304,
+        0.0,
+        -0.32504616066529035,
+        0.10190604134856637,
+        0.3994011958865686,
+        -0.01891626434624672
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:18"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "B_SPLINE_SURFACE_WITH_KNOTS": 154,
+        "CYLINDRICAL_SURFACE": 52,
+        "SPHERICAL_SURFACE": 5,
+        "TOROIDAL_SURFACE": 4
+      }
+    },
+    {
+      "part": "espresso display glass ",
+      "solidCount": 1,
+      "solidIds": [
+        463543
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 463552,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 463551,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 869,
+      "faceCount": 22,
+      "cartesianPointCount": 349,
+      "sourceProduct": {
+        "entity": 462669,
+        "productFields": [
+          "espresso display glass ",
+          ""
+        ]
+      },
+      "importedName": "espresso display glass ",
+      "sourceBoundsMm": [
+        58.9203032447,
+        -86.0000002809,
+        345.077113298,
+        62.920303444700004,
+        86.0000002809,
+        390.4758049725394
+      ],
+      "targetBoundsM": [
+        -0.09961664597503711,
+        0.3472307710606954,
+        -0.05256306160900967,
+        0.07238335458676287,
+        0.39262946273523475,
+        -0.04856306140900967
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:19"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 4
+      }
+    },
+    {
+      "part": "espresso display base",
+      "solidCount": 1,
+      "solidIds": [
+        464705
+      ],
+      "solidNames": [
+        "PartBody"
+      ],
+      "sourceAxes": {
+        "id": 464714,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 464713,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 1137,
+      "faceCount": 39,
+      "cartesianPointCount": 242,
+      "sourceProduct": {
+        "entity": 463563,
+        "productFields": [
+          "espresso display base",
+          ""
+        ]
+      },
+      "importedName": "espresso display base",
+      "sourceBoundsMm": [
+        54.920303244699994,
+        -80.6706238795912,
+        343.846343021,
+        148.903289795,
+        80.6706238795912,
+        389.0700684597531
+      ],
+      "targetBoundsM": [
+        -0.09428726957372832,
+        0.34600000078369536,
+        -0.05656306160900968,
+        0.06705397818545408,
+        0.3912237262224485,
+        0.03741992494129033
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:20"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 10
+      }
+    },
+    {
+      "part": "espresso right sheet pannel",
+      "solidCount": 4,
+      "solidIds": [
+        466059,
+        467327,
+        468608,
+        469470
+      ],
+      "solidNames": [
+        "PartBody.1",
+        "PartBody.2",
+        "PartBody.3",
+        "PartBody.4"
+      ],
+      "sourceAxes": {
+        "id": 469477,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 469476,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 4738,
+      "faceCount": 140,
+      "cartesianPointCount": 1198,
+      "sourceProduct": {
+        "entity": 464725,
+        "productFields": [
+          "espresso right sheet pannel",
+          ""
+        ]
+      },
+      "importedName": "espresso right sheet pannel",
+      "sourceBoundsMm": [
+        -19.0171052033,
+        -85.0000001,
+        1.2499999,
+        153.50000010017007,
+        85.0000001,
+        345.046343121
+      ],
+      "targetBoundsM": [
+        -0.09861664579413712,
+        0.003403657662695405,
+        -0.13050047005700965,
+        0.07138335440586288,
+        0.3472000008836954,
+        0.0420166352464604
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:21"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 108
+      }
+    },
+    {
+      "part": "Symmetry of espresso screw",
+      "solidCount": 13,
+      "solidIds": [
+        469828,
+        470099,
+        470343,
+        470587,
+        470831,
+        471075,
+        471344,
+        471588,
+        471832,
+        472076,
+        472320,
+        472564,
+        472808
+      ],
+      "solidNames": [
+        "PartBody.1",
+        "PartBody.2",
+        "PartBody.3",
+        "PartBody.4",
+        "PartBody.5",
+        "PartBody.6",
+        "PartBody.7",
+        "PartBody.8",
+        "PartBody.9",
+        "PartBody.10",
+        "PartBody.11",
+        "PartBody.12",
+        "PartBody.13"
+      ],
+      "sourceAxes": {
+        "id": 472815,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 472814,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 3313,
+      "faceCount": 145,
+      "cartesianPointCount": 560,
+      "sourceProduct": {
+        "entity": 469488,
+        "productFields": [
+          "Symmetry of espresso screw",
+          ""
+        ]
+      },
+      "importedName": "Symmetry of espresso screw",
+      "sourceBoundsMm": [
+        18.0241692506,
+        -88.0,
+        14.4851633271,
+        156.5000000000079,
+        -48.2074394226,
+        364.867431641
+      ],
+      "targetBoundsM": [
+        -0.10161664569413711,
+        0.016638821089795405,
+        -0.09345919560310968,
+        -0.061824085116737114,
+        0.3670210894036954,
+        0.04501663514629823
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:22"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "CYLINDRICAL_SURFACE": 13,
+        "TOROIDAL_SURFACE": 26
+      }
+    },
+    {
+      "part": "Symmetry of Symmetry of espresso screw",
+      "solidCount": 13,
+      "solidIds": [
+        473166,
+        473437,
+        473681,
+        473925,
+        474169,
+        474413,
+        474682,
+        474926,
+        475170,
+        475414,
+        475658,
+        475902,
+        476146
+      ],
+      "solidNames": [
+        "PartBody.1",
+        "PartBody.2",
+        "PartBody.3",
+        "PartBody.4",
+        "PartBody.5",
+        "PartBody.6",
+        "PartBody.7",
+        "PartBody.8",
+        "PartBody.9",
+        "PartBody.10",
+        "PartBody.11",
+        "PartBody.12",
+        "PartBody.13"
+      ],
+      "sourceAxes": {
+        "id": 476153,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "assemblyAxes": {
+        "id": 476152,
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "x": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "entityCount": 3313,
+      "faceCount": 145,
+      "cartesianPointCount": 560,
+      "sourceProduct": {
+        "entity": 472826,
+        "productFields": [
+          "Symmetry of Symmetry of espresso screw",
+          ""
+        ]
+      },
+      "importedName": "Symmetry of Symmetry of espresso screw",
+      "sourceBoundsMm": [
+        18.0241692506,
+        48.2074394226,
+        14.485163227100001,
+        156.5000000000079,
+        88.0,
+        364.867431641
+      ],
+      "targetBoundsM": [
+        0.034590793728462875,
+        0.016638820989795404,
+        -0.09345919560310968,
+        0.07438335430586288,
+        0.3670210894036954,
+        0.04501663514629823
+      ],
+      "kernelValid": true,
+      "importedGeometryLabels": [
+        "0:1:1:1:23"
+      ],
+      "importedAuxiliaryLabels": [],
+      "selectedSurfaceEntityCounts": {
+        "TOROIDAL_SURFACE": 26,
+        "CYLINDRICAL_SURFACE": 13
+      }
+    }
+  ],
+  "kernelEvidence": {
+    "source": "/Users/rwiiinzz/Downloads/espressu unit all parts.stp",
+    "bytes": 43118861,
+    "sha256": "8d2b18ced88ab1bbde9708f2c3ba61bb57dc1d619345c6f6c6243c960503f663",
+    "occtVersion": "8.0.1.1",
+    "fileUnits": [
+      [
+        "millimetre"
+      ],
+      [
+        "radian"
+      ],
+      [
+        "steradian"
+      ]
+    ],
+    "systemLengthUnit": 1.0,
+    "seconds": 12.388025999069214,
+    "roots": [
+      {
+        "name": "espressu unit all parts",
+        "label": "0:1:1:1",
+        "bounds": [
+          -213.56279581158066,
+          -112.05264743004591,
+          -2.153657762695405,
+          436.529525519,
+          139.28593881832015,
+          397.2475381238732
+        ],
+        "solids": 56,
+        "faces": 4097,
+        "location": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      }
+    ],
+    "assemblies": [
+      {
+        "name": "espressu unit all parts",
+        "instanceName": "espressu unit all parts",
+        "label": "0:1:1:1",
+        "definitionLabel": "0:1:1:1",
+        "path": [
+          "espressu unit all parts"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": false,
+        "children": 23
+      },
+      {
+        "name": "espresso drain Mesh",
+        "instanceName": "espresso drain Mesh",
+        "label": "0:1:1:1:7",
+        "definitionLabel": "0:1:1:8",
+        "path": [
+          "espressu unit all parts",
+          "espresso drain Mesh"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.1754785948
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.1754785948
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "children": 2
+      },
+      {
+        "name": "620424",
+        "instanceName": "espresso headgroup",
+        "label": "0:1:1:1:15",
+        "definitionLabel": "0:1:1:18",
+        "path": [
+          "espressu unit all parts",
+          "620424"
+        ],
+        "localMatrix": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            152.557224432
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            192.147786466
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            152.557224432
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            192.147786466
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "children": 2
+      },
+      {
+        "name": "espresso lever full parts",
+        "instanceName": "espresso lever full parts",
+        "label": "0:1:1:1:16",
+        "definitionLabel": "0:1:1:21",
+        "path": [
+          "espressu unit all parts",
+          "espresso lever full parts"
+        ],
+        "localMatrix": [
+          [
+            -0.8463066671517805,
+            0.0,
+            -0.5326959969198619,
+            92.7118307486
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            85.2804709962
+          ],
+          [
+            0.5326959969198619,
+            0.0,
+            -0.8463066671517805,
+            84.8463430205
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            -0.8463066671517805,
+            0.0,
+            -0.5326959969198619,
+            92.7118307486
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            85.2804709962
+          ],
+          [
+            0.5326959969198619,
+            0.0,
+            -0.8463066671517805,
+            84.8463430205
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "children": 2
+      }
+    ],
+    "parts": [
+      {
+        "name": "steel Chassis espresso",
+        "instanceName": "new steel Chassis espresso.1",
+        "label": "0:1:1:1:1",
+        "definitionLabel": "0:1:1:2",
+        "path": [
+          "espressu unit all parts",
+          "steel Chassis espresso"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          -155.0000000010045,
+          -84.00000010000917,
+          -2.0000001,
+          152.50000010017695,
+          84.0000001,
+          345.0000001
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 401,
+        "valid": true,
+        "definitionBounds": [
+          -155.0000000010045,
+          -84.00000010000917,
+          -2.0000001,
+          152.50000010017695,
+          84.0000001,
+          345.0000001
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso chekvalve base",
+        "instanceName": "espresso chekvalve base.1",
+        "label": "0:1:1:1:2",
+        "definitionLabel": "0:1:1:3",
+        "path": [
+          "espressu unit all parts",
+          "espresso chekvalve base"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          -72.3600464867,
+          -83.9999999993,
+          163.54594421399773,
+          -47.3600462867,
+          -62.35756673279436,
+          198.545944414
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 32,
+        "valid": true,
+        "definitionBounds": [
+          -72.3600464867,
+          -83.9999999993,
+          163.54594421399773,
+          -47.3600462867,
+          -62.35756673279436,
+          198.545944414
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso wiring base",
+        "instanceName": "espresso wiring base.1",
+        "label": "0:1:1:1:3",
+        "definitionLabel": "0:1:1:4",
+        "path": [
+          "espressu unit all parts",
+          "espresso wiring base"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          -115.92855845,
+          -84.0000000993,
+          27.9999999,
+          -75.9285582496,
+          8.72254141877,
+          30.0000001
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 20,
+        "valid": true,
+        "definitionBounds": [
+          -115.92855845,
+          -84.0000000993,
+          27.9999999,
+          -75.9285582496,
+          8.72254141877,
+          30.0000001
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso input valve base",
+        "instanceName": "espresso input valve base.1",
+        "label": "0:1:1:1:4",
+        "definitionLabel": "0:1:1:5",
+        "path": [
+          "espressu unit all parts",
+          "espresso input valve base"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            4.66174768543
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            3.18559669613
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            4.66174768543
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            3.18559669613
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          -144.67406862857,
+          48.3236244072,
+          133.30673037212773,
+          -114.67406842857001,
+          84.0,
+          167.30673057213
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 28,
+        "valid": true,
+        "definitionBounds": [
+          -149.335816314,
+          48.3236244072,
+          130.12113367599773,
+          -119.33581611400001,
+          84.0,
+          164.121133876
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso hydrodamper base",
+        "instanceName": "espresso hydrodamper base.1",
+        "label": "0:1:1:1:5",
+        "definitionLabel": "0:1:1:6",
+        "path": [
+          "espressu unit all parts",
+          "espresso hydrodamper base"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          -85.58417166660055,
+          29.399392276471602,
+          160.1937688976716,
+          -34.34941763679945,
+          84.0384373920005,
+          162.19384310624235
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 20,
+        "valid": true,
+        "definitionBounds": [
+          -85.58417166660055,
+          29.399392276471602,
+          160.1937688976716,
+          -34.34941763679945,
+          84.0384373920005,
+          162.19384310624235
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso boiler base",
+        "instanceName": "espresso boiler base.1",
+        "label": "0:1:1:1:6",
+        "definitionLabel": "0:1:1:7",
+        "path": [
+          "espressu unit all parts",
+          "espresso boiler base"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            7.97593549989
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.24410511576
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            7.97593549989
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.24410511576
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          5.475935399889999,
+          -84.0000000993,
+          255.24410501576,
+          55.47593559989,
+          84.0000000993,
+          257.24410521576004
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 2,
+        "shells": 2,
+        "faces": 28,
+        "valid": true,
+        "definitionBounds": [
+          -2.5000001,
+          -84.0000000993,
+          250.9999999,
+          47.5000001,
+          84.0000000993,
+          253.0000001
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "SOLID",
+        "instanceName": "=>[0:1:1:9]",
+        "label": "0:1:1:8:1",
+        "definitionLabel": "0:1:1:9",
+        "path": [
+          "espressu unit all parts",
+          "espresso drain Mesh",
+          "SOLID"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.1754785948
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          165.358550925,
+          -107.00000010000007,
+          40.8245213052,
+          378.96623613899993,
+          107.00000009999995,
+          41.8245215052
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 391,
+        "valid": true,
+        "definitionBounds": [
+          165.358550925,
+          -107.00000010000007,
+          50.9999999,
+          378.96623613899993,
+          107.00000009999995,
+          52.0000001
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "COMPOUND",
+        "instanceName": "=>[0:1:1:10]",
+        "label": "0:1:1:8:2",
+        "definitionLabel": "0:1:1:10",
+        "path": [
+          "espressu unit all parts",
+          "espresso drain Mesh",
+          "COMPOUND"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.1754785948
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          247.15296174782,
+          -7.20146940418,
+          41.8245214052,
+          261.55590055618,
+          7.20146940418,
+          41.8245214052
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 0,
+        "shells": 0,
+        "faces": 0,
+        "valid": true,
+        "definitionBounds": [
+          247.15296174782,
+          -7.20146940418,
+          52.0,
+          261.55590055618,
+          7.20146940418,
+          52.0
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso drain",
+        "instanceName": "espresso drain",
+        "label": "0:1:1:1:8",
+        "definitionLabel": "0:1:1:11",
+        "path": [
+          "espressu unit all parts",
+          "espresso drain"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          162.858550925,
+          -109.5,
+          0.0,
+          381.858551025,
+          109.5,
+          42.0
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 11,
+        "valid": true,
+        "definitionBounds": [
+          162.858550925,
+          -109.5,
+          0.0,
+          381.858551025,
+          109.5,
+          42.0
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso group drain",
+        "instanceName": "espresso group drain",
+        "label": "0:1:1:1:9",
+        "definitionLabel": "0:1:1:12",
+        "path": [
+          "espressu unit all parts",
+          "espresso group drain"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          173.97583074797743,
+          -12.7017059222,
+          40.831506347688716,
+          195.97583074802256,
+          12.7017059222,
+          128.83150634801243
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 13,
+        "valid": true,
+        "definitionBounds": [
+          173.97583074797743,
+          -12.7017059222,
+          40.831506347688716,
+          195.97583074802256,
+          12.7017059222,
+          128.83150634801243
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso short cup mesh",
+        "instanceName": "espresso short cup mesh",
+        "label": "0:1:1:1:10",
+        "definitionLabel": "0:1:1:13",
+        "path": [
+          "espressu unit all parts",
+          "espresso short cup mesh"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          195.76016302398412,
+          -50.0,
+          112.53150634799998,
+          297.975830749,
+          50.0,
+          129.03150634800227
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 138,
+        "valid": true,
+        "definitionBounds": [
+          195.76016302398412,
+          -50.0,
+          112.53150634799998,
+          297.975830749,
+          50.0,
+          129.03150634800227
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso short cup mesh left holder",
+        "instanceName": "espresso short cup mesh left holder",
+        "label": "0:1:1:1:11",
+        "definitionLabel": "0:1:1:14",
+        "path": [
+          "espressu unit all parts",
+          "espresso short cup mesh left holder"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          192.375830649,
+          -14.2036629723,
+          109.031506248,
+          216.475830848,
+          -12.203662772300001,
+          131.031506448
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 17,
+        "valid": true,
+        "definitionBounds": [
+          192.375830649,
+          -14.2036629723,
+          109.031506248,
+          216.475830848,
+          -12.203662772300001,
+          131.031506448
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso short cup mesh right holder",
+        "instanceName": "espresso short cup mesh right holder",
+        "label": "0:1:1:1:12",
+        "definitionLabel": "0:1:1:15",
+        "path": [
+          "espressu unit all parts",
+          "espresso short cup mesh right holder"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          192.375830749,
+          12.4036628723,
+          109.031506348,
+          216.475830748,
+          14.4036628723,
+          131.031506348
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 17,
+        "valid": true,
+        "definitionBounds": [
+          192.375830749,
+          12.4036628723,
+          109.031506348,
+          216.475830748,
+          14.4036628723,
+          131.031506348
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso short cup mesh base",
+        "instanceName": "espresso short cup mesh base",
+        "label": "0:1:1:1:13",
+        "definitionLabel": "0:1:1:16",
+        "path": [
+          "espressu unit all parts",
+          "espresso short cup mesh base"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          153.47583064900002,
+          -23.2500001002,
+          129.031506248,
+          207.975830849,
+          23.2500001002,
+          131.031506448
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 26,
+        "valid": true,
+        "definitionBounds": [
+          153.47583064900002,
+          -23.2500001002,
+          129.031506248,
+          207.975830849,
+          23.2500001002,
+          131.031506448
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso solenoid cover",
+        "instanceName": "espresso solenoid cover",
+        "label": "0:1:1:1:14",
+        "definitionLabel": "0:1:1:17",
+        "path": [
+          "espressu unit all parts",
+          "espresso solenoid cover"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          148.97583074799772,
+          -21.7500000005,
+          129.831506348,
+          206.975830749,
+          21.7499999995,
+          220.831506348
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 52,
+        "valid": true,
+        "definitionBounds": [
+          148.97583074799772,
+          -21.7500000005,
+          129.831506348,
+          206.975830749,
+          21.7499999995,
+          220.831506348
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "SOLID",
+        "instanceName": "=>[0:1:1:19]",
+        "label": "0:1:1:18:1",
+        "definitionLabel": "0:1:1:19",
+        "path": [
+          "espressu unit all parts",
+          "620424",
+          "SOLID"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            152.557224432
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            192.147786466
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          152.557224332,
+          -48.6896826448,
+          186.6475876612519,
+          303.2469070768,
+          48.6896826448,
+          324.6477865660001
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 1870,
+        "valid": true,
+        "definitionBounds": [
+          -48.6896826448,
+          -5.500198804748133,
+          -1.0000001108141356e-07,
+          48.6896826448,
+          132.50000010000002,
+          150.6896826448
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "COMPOUND",
+        "instanceName": "=>[0:1:1:20]",
+        "label": "0:1:1:18:2",
+        "definitionLabel": "0:1:1:20",
+        "path": [
+          "espressu unit all parts",
+          "620424",
+          "COMPOUND"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            152.557224432
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            192.147786466
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          152.557224432,
+          -29.210691561770002,
+          273.31693115062,
+          152.557224432,
+          29.17551512068,
+          281.55316570718
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 0,
+        "shells": 0,
+        "faces": 0,
+        "valid": true,
+        "definitionBounds": [
+          -29.210691561770002,
+          81.16914468462001,
+          0.0,
+          29.17551512068,
+          89.40537924118,
+          0.0
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "COMPOUND",
+        "instanceName": "=>[0:1:1:22]",
+        "label": "0:1:1:21:1",
+        "definitionLabel": "0:1:1:22",
+        "path": [
+          "espressu unit all parts",
+          "espresso lever full parts",
+          "COMPOUND"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            -0.8463066671517805,
+            0.0,
+            -0.5326959969198619,
+            92.7118307486
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            85.2804709962
+          ],
+          [
+            0.5326959969198619,
+            0.0,
+            -0.8463066671517805,
+            84.8463430205
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          47.71183074859999,
+          85.2804708962,
+          39.8463430205,
+          274.0067350142648,
+          139.28593881832015,
+          129.84634312050002
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 4,
+        "shells": 4,
+        "faces": 62,
+        "valid": true,
+        "definitionBounds": [
+          -157.38919097526352,
+          -1e-07,
+          -104.33928007163578,
+          45.00000010000001,
+          54.00546782212017,
+          45.0
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "COMPOUND",
+        "instanceName": "=>[0:1:1:23]",
+        "label": "0:1:1:21:2",
+        "definitionLabel": "0:1:1:23",
+        "path": [
+          "espressu unit all parts",
+          "espresso lever full parts",
+          "COMPOUND"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            -0.8463066671517805,
+            0.0,
+            -0.5326959969198619,
+            92.7118307486
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            85.2804709962
+          ],
+          [
+            0.5326959969198619,
+            0.0,
+            -0.8463066671517805,
+            84.8463430205
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          89.61183074858513,
+          81.26017585307,
+          56.99022786977379,
+          144.510287687541,
+          100.03047732889999,
+          98.74634302051182
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 0,
+        "shells": 0,
+        "faces": 0,
+        "valid": true,
+        "definitionBounds": [
+          -45.36590310906444,
+          -4.02029514313,
+          -31.974048504304527,
+          8.1054303618,
+          14.7500063327,
+          25.0849737714
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso portafilter",
+        "instanceName": "espresso portafilter",
+        "label": "0:1:1:1:17",
+        "definitionLabel": "0:1:1:24",
+        "path": [
+          "espressu unit all parts",
+          "espresso portafilter"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            328.799937699
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            198.84722805
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            328.799937699
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            198.84722805
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          221.40557966974396,
+          -39.71694701356779,
+          182.34722805,
+          436.529525519,
+          39.379068276287036,
+          230.9485342170679
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 3,
+        "shells": 3,
+        "faces": 136,
+        "valid": true,
+        "definitionBounds": [
+          -107.39435802925605,
+          -39.71694701356779,
+          -16.5,
+          107.72958782,
+          39.379068276287036,
+          32.10130616706791
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso unit cover",
+        "instanceName": "espresso unit cover",
+        "label": "0:1:1:1:18",
+        "definitionLabel": "0:1:1:25",
+        "path": [
+          "espressu unit all parts",
+          "espresso unit cover"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          -213.56279581158066,
+          -112.05264743004591,
+          -2.153657762695405,
+          92.56710050746295,
+          115.5226870427035,
+          397.2475381238732
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 344,
+        "valid": true,
+        "definitionBounds": [
+          -213.56279581158066,
+          -112.05264743004591,
+          -2.153657762695405,
+          92.56710050746295,
+          115.5226870427035,
+          397.2475381238732
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso display glass ",
+        "instanceName": "espresso display glass ",
+        "label": "0:1:1:1:19",
+        "definitionLabel": "0:1:1:26",
+        "path": [
+          "espressu unit all parts",
+          "espresso display glass "
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          58.9203032447,
+          -86.0000002809,
+          345.077113298,
+          62.920303444700004,
+          86.0000002809,
+          390.4758049725394
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 22,
+        "valid": true,
+        "definitionBounds": [
+          58.9203032447,
+          -86.0000002809,
+          345.077113298,
+          62.920303444700004,
+          86.0000002809,
+          390.4758049725394
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso display base",
+        "instanceName": "espresso display base",
+        "label": "0:1:1:1:20",
+        "definitionLabel": "0:1:1:27",
+        "path": [
+          "espressu unit all parts",
+          "espresso display base"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          54.920303244699994,
+          -80.6706238795912,
+          343.846343021,
+          148.903289795,
+          80.6706238795912,
+          389.0700684597531
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 39,
+        "valid": true,
+        "definitionBounds": [
+          54.920303244699994,
+          -80.6706238795912,
+          343.846343021,
+          148.903289795,
+          80.6706238795912,
+          389.0700684597531
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "espresso right sheet pannel",
+        "instanceName": "espresso right sheet pannel",
+        "label": "0:1:1:1:21",
+        "definitionLabel": "0:1:1:28",
+        "path": [
+          "espressu unit all parts",
+          "espresso right sheet pannel"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          -19.0171052033,
+          -85.0000001,
+          1.2499999,
+          153.50000010017007,
+          85.0000001,
+          345.046343121
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 4,
+        "shells": 4,
+        "faces": 140,
+        "valid": true,
+        "definitionBounds": [
+          -19.0171052033,
+          -85.0000001,
+          1.2499999,
+          153.50000010017007,
+          85.0000001,
+          345.046343121
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "Symmetry of espresso screw",
+        "instanceName": "Symmetry of espresso screw.1",
+        "label": "0:1:1:1:22",
+        "definitionLabel": "0:1:1:29",
+        "path": [
+          "espressu unit all parts",
+          "Symmetry of espresso screw"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          18.0241692506,
+          -88.0,
+          14.4851633271,
+          156.5000000000079,
+          -48.2074394226,
+          364.867431641
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 13,
+        "shells": 13,
+        "faces": 145,
+        "valid": true,
+        "definitionBounds": [
+          18.0241692506,
+          -88.0,
+          14.4851633271,
+          156.5000000000079,
+          -48.2074394226,
+          364.867431641
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      {
+        "name": "Symmetry of Symmetry of espresso screw",
+        "instanceName": "Symmetry of Symmetry of espresso screw.1.1",
+        "label": "0:1:1:1:23",
+        "definitionLabel": "0:1:1:30",
+        "path": [
+          "espressu unit all parts",
+          "Symmetry of Symmetry of espresso screw"
+        ],
+        "localMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "worldMatrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference": true,
+        "bounds": [
+          18.0241692506,
+          48.2074394226,
+          14.485163227100001,
+          156.5000000000079,
+          88.0,
+          364.867431641
+        ],
+        "instanceColors": {},
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 13,
+        "shells": 13,
+        "faces": 145,
+        "valid": true,
+        "definitionBounds": [
+          18.0241692506,
+          48.2074394226,
+          14.485163227100001,
+          156.5000000000079,
+          88.0,
+          364.867431641
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      }
+    ],
+    "prototypes": {
+      "0:1:1:2": {
+        "name": "steel Chassis espresso",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 401,
+        "valid": true,
+        "definitionBounds": [
+          -155.0000000010045,
+          -84.00000010000917,
+          -2.0000001,
+          152.50000010017695,
+          84.0000001,
+          345.0000001
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:3": {
+        "name": "espresso chekvalve base",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 32,
+        "valid": true,
+        "definitionBounds": [
+          -72.3600464867,
+          -83.9999999993,
+          163.54594421399773,
+          -47.3600462867,
+          -62.35756673279436,
+          198.545944414
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:4": {
+        "name": "espresso wiring base",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 20,
+        "valid": true,
+        "definitionBounds": [
+          -115.92855845,
+          -84.0000000993,
+          27.9999999,
+          -75.9285582496,
+          8.72254141877,
+          30.0000001
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:5": {
+        "name": "espresso input valve base",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 28,
+        "valid": true,
+        "definitionBounds": [
+          -149.335816314,
+          48.3236244072,
+          130.12113367599773,
+          -119.33581611400001,
+          84.0,
+          164.121133876
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:6": {
+        "name": "espresso hydrodamper base",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 20,
+        "valid": true,
+        "definitionBounds": [
+          -85.58417166660055,
+          29.399392276471602,
+          160.1937688976716,
+          -34.34941763679945,
+          84.0384373920005,
+          162.19384310624235
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:7": {
+        "name": "espresso boiler base",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 2,
+        "shells": 2,
+        "faces": 28,
+        "valid": true,
+        "definitionBounds": [
+          -2.5000001,
+          -84.0000000993,
+          250.9999999,
+          47.5000001,
+          84.0000000993,
+          253.0000001
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:9": {
+        "name": "SOLID",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 391,
+        "valid": true,
+        "definitionBounds": [
+          165.358550925,
+          -107.00000010000007,
+          50.9999999,
+          378.96623613899993,
+          107.00000009999995,
+          52.0000001
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:10": {
+        "name": "COMPOUND",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 0,
+        "shells": 0,
+        "faces": 0,
+        "valid": true,
+        "definitionBounds": [
+          247.15296174782,
+          -7.20146940418,
+          52.0,
+          261.55590055618,
+          7.20146940418,
+          52.0
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:11": {
+        "name": "espresso drain",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 11,
+        "valid": true,
+        "definitionBounds": [
+          162.858550925,
+          -109.5,
+          0.0,
+          381.858551025,
+          109.5,
+          42.0
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:12": {
+        "name": "espresso group drain",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 13,
+        "valid": true,
+        "definitionBounds": [
+          173.97583074797743,
+          -12.7017059222,
+          40.831506347688716,
+          195.97583074802256,
+          12.7017059222,
+          128.83150634801243
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:13": {
+        "name": "espresso short cup mesh",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 138,
+        "valid": true,
+        "definitionBounds": [
+          195.76016302398412,
+          -50.0,
+          112.53150634799998,
+          297.975830749,
+          50.0,
+          129.03150634800227
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:14": {
+        "name": "espresso short cup mesh left holder",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 17,
+        "valid": true,
+        "definitionBounds": [
+          192.375830649,
+          -14.2036629723,
+          109.031506248,
+          216.475830848,
+          -12.203662772300001,
+          131.031506448
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:15": {
+        "name": "espresso short cup mesh right holder",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 17,
+        "valid": true,
+        "definitionBounds": [
+          192.375830749,
+          12.4036628723,
+          109.031506348,
+          216.475830748,
+          14.4036628723,
+          131.031506348
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:16": {
+        "name": "espresso short cup mesh base",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 26,
+        "valid": true,
+        "definitionBounds": [
+          153.47583064900002,
+          -23.2500001002,
+          129.031506248,
+          207.975830849,
+          23.2500001002,
+          131.031506448
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:17": {
+        "name": "espresso solenoid cover",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 52,
+        "valid": true,
+        "definitionBounds": [
+          148.97583074799772,
+          -21.7500000005,
+          129.831506348,
+          206.975830749,
+          21.7499999995,
+          220.831506348
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:19": {
+        "name": "SOLID",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 1870,
+        "valid": true,
+        "definitionBounds": [
+          -48.6896826448,
+          -5.500198804748133,
+          -1.0000001108141356e-07,
+          48.6896826448,
+          132.50000010000002,
+          150.6896826448
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:20": {
+        "name": "COMPOUND",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 0,
+        "shells": 0,
+        "faces": 0,
+        "valid": true,
+        "definitionBounds": [
+          -29.210691561770002,
+          81.16914468462001,
+          0.0,
+          29.17551512068,
+          89.40537924118,
+          0.0
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:22": {
+        "name": "COMPOUND",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 4,
+        "shells": 4,
+        "faces": 62,
+        "valid": true,
+        "definitionBounds": [
+          -157.38919097526352,
+          -1e-07,
+          -104.33928007163578,
+          45.00000010000001,
+          54.00546782212017,
+          45.0
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:23": {
+        "name": "COMPOUND",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 0,
+        "shells": 0,
+        "faces": 0,
+        "valid": true,
+        "definitionBounds": [
+          -45.36590310906444,
+          -4.02029514313,
+          -31.974048504304527,
+          8.1054303618,
+          14.7500063327,
+          25.0849737714
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:24": {
+        "name": "espresso portafilter",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 3,
+        "shells": 3,
+        "faces": 136,
+        "valid": true,
+        "definitionBounds": [
+          -107.39435802925605,
+          -39.71694701356779,
+          -16.5,
+          107.72958782,
+          39.379068276287036,
+          32.10130616706791
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:25": {
+        "name": "espresso unit cover",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 344,
+        "valid": true,
+        "definitionBounds": [
+          -213.56279581158066,
+          -112.05264743004591,
+          -2.153657762695405,
+          92.56710050746295,
+          115.5226870427035,
+          397.2475381238732
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:26": {
+        "name": "espresso display glass ",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 22,
+        "valid": true,
+        "definitionBounds": [
+          58.9203032447,
+          -86.0000002809,
+          345.077113298,
+          62.920303444700004,
+          86.0000002809,
+          390.4758049725394
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:27": {
+        "name": "espresso display base",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_SOLID",
+        "solids": 1,
+        "shells": 1,
+        "faces": 39,
+        "valid": true,
+        "definitionBounds": [
+          54.920303244699994,
+          -80.6706238795912,
+          343.846343021,
+          148.903289795,
+          80.6706238795912,
+          389.0700684597531
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:28": {
+        "name": "espresso right sheet pannel",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 4,
+        "shells": 4,
+        "faces": 140,
+        "valid": true,
+        "definitionBounds": [
+          -19.0171052033,
+          -85.0000001,
+          1.2499999,
+          153.50000010017007,
+          85.0000001,
+          345.046343121
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:29": {
+        "name": "Symmetry of espresso screw",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 13,
+        "shells": 13,
+        "faces": 145,
+        "valid": true,
+        "definitionBounds": [
+          18.0241692506,
+          -88.0,
+          14.4851633271,
+          156.5000000000079,
+          -48.2074394226,
+          364.867431641
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      },
+      "0:1:1:30": {
+        "name": "Symmetry of Symmetry of espresso screw",
+        "shapeType": "TopAbs_ShapeEnum.TopAbs_COMPOUND",
+        "solids": 13,
+        "shells": 13,
+        "faces": 145,
+        "valid": true,
+        "definitionBounds": [
+          18.0241692506,
+          48.2074394226,
+          14.485163227100001,
+          156.5000000000079,
+          88.0,
+          364.867431641
+        ],
+        "definitionLocation": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "colors": {},
+        "subshapeLabelCount": 0,
+        "coloredSubshapeLabels": 0
+      }
+    },
+    "colorTableEntries": 0
+  },
+  "evidenceNotes": [
+    "selectedSurfaceEntityCounts is a partial lexical count of selected surface entity types, not a complete inventory; planes and complex rational spline entity forms are not included.",
+    "Kernel validity checks were applied to all 23 solid-bearing imported shapes with geometric controls enabled.",
+    "No custom GLB, tessellated runtime mesh, or application integration was produced."
+  ]
+}

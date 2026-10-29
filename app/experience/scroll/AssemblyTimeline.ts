@@ -9,7 +9,7 @@ export interface AssemblyTimelineController {
   dispose: () => void;
 }
 
-/** GSAP owns time; immutable manifest data owns each physical object's absolute transform. */
+/** GSAP owns time; immutable data owns each animated wrapper/object's parent-frame transform. */
 export function createAssemblyTimeline(
   parts: readonly PartSpec[],
   objects: ReadonlyMap<string, Object3D>,

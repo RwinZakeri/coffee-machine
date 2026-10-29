@@ -4,10 +4,8 @@ import { readFileSync } from "node:fs";
 import { Object3D } from "three";
 import { CHAPTERS } from "../app/experience/data/chapters";
 import { buildPartsManifest } from "../app/experience/data/partsManifest";
-import { createReconstructedParts } from "../app/experience/data/reconstructedParts";
 import type { AssetIndex, AssetNode } from "../app/experience/assets/loadMachineAssets";
 import type { PartSpec, QuaternionTuple, Vec3 } from "../app/experience/types";
-import { ASSEMBLY_GROUPS } from "../app/experience/types";
 import { createAssemblyTimeline } from "../app/experience/scroll/AssemblyTimeline";
 import {
   chapterAtProgress,
@@ -44,42 +42,18 @@ const missing: PartSpec = {
 const fixtureParts = [frame, bracket, missing];
 
 type QaAssetIndex = Omit<AssetIndex, "parts"> & { parts: (AssetNode & { scale: Vec3 })[] };
-const assetIndex = JSON.parse(readFileSync(new URL("../public/models/linea-pb/asset-index.json", import.meta.url), "utf8")) as QaAssetIndex;
+const assetIndex = JSON.parse(readFileSync(new URL("../public/models/custom-espresso/asset-index.json", import.meta.url), "utf8")) as QaAssetIndex;
 const actualParts = buildPartsManifest(assetIndex);
 
-test("the audited CAD inventory separates sight-glass hydraulics from steam and exterior panels", () => {
-  const counts = ASSEMBLY_GROUPS.map((group) => actualParts.filter((part) => part.group === group).length);
-  assert.deepEqual(counts, [14, 9, 0, 0, 0, 22, 8, 51, 8, 18, 12]);
-  const partAt = (number: number) => actualParts.find((part) => part.nodeName?.startsWith(`cad_${String(number).padStart(3, "0")}_`))!;
-  assert.equal(partAt(55).materialGroup, "glass");
-  assert.equal(partAt(59).materialGroup, "copper");
-  assert.equal(partAt(46).materialGroup, "rubber");
-  assert.equal(partAt(87).materialGroup, "rubber");
-  const cover = partAt(24);
-  for (const retained of [partAt(23), partAt(25)]) {
-    assert.ok(cover.dependencies.includes(retained.id), "outlet cover must retain the assembled gasket and filter");
-    assert.ok(retained.assemblyEnd <= cover.assemblyStart);
-    assert.equal(evaluatePartState(retained, cover.assemblyStart).assemblyProgress, 1);
-  }
-  assert.ok(actualParts.filter((part) => part.dependencies.length > 0).length >= 25, "real assembly relationships must be exercised by validation");
-});
-
-test("all six CAD leaves in each portafilter remain rigid during insertion and reverse seeking", () => {
-  for (const side of [-1, 1]) {
-    const parts = actualParts.filter((part) => part.group === "11_Accessories" && Math.sign(part.finalPosition[0]) === side);
-    assert.equal(parts.length, 6);
-    for (const progress of [.96, .97, .95, 1, .965, .94]) {
-      const origin = evaluatePartState(parts[0], progress);
-      for (const part of parts) {
-        assert.ok(part.assemblyPivot, "portafilter leaves require a shared rigid pivot");
-        const state = evaluatePartState(part, progress);
-        const expectedDistance = Math.hypot(...part.finalPosition.map((value, axis) => value - parts[0].finalPosition[axis]));
-        const actualDistance = Math.hypot(...state.position.map((value, axis) => value - origin.position[axis]));
-        assert.ok(Math.abs(actualDistance - expectedDistance) < 1e-10);
-        assert.deepEqual(state.quaternion, origin.quaternion);
-      }
-    }
-  }
+test("the custom manifest covers the 23 source products without invented internals", () => {
+  const counts = CHAPTERS.map((chapter) => actualParts.filter((part) => part.group === chapter.group).length);
+  assert.deepEqual(counts, [6, 7, 3, 2, 4, 1]);
+  assert.equal(actualParts.length, 23);
+  assert.equal(assetIndex.parts.reduce((total, part) => total + (part.solidCount ?? 0), 0), 56);
+  assert.equal(actualParts.filter((part) => part.group === "11_Accessories").length, 1);
+  assert.ok(actualParts.every((part) => part.accuracyStatus === "Verified CAD"));
+  assert.ok(actualParts.every((part) => !part.id.includes("Reconstruction")));
+  assert.throws(() => buildPartsManifest({ ...assetIndex, parts: [{ ...assetIndex.parts[0], sourceProductId: -1 }] }), /Unmapped custom CAD/);
 });
 
 function assertTupleClose(actual: readonly number[], expected: readonly number[], tolerance = 1e-12): void {
@@ -105,7 +79,7 @@ test("every initial and final transform equals its immutable manifest target", (
   }
 });
 
-test("every extracted CAD node has exact source transforms at 100% and its displaced state at 0%", () => {
+test("every custom animation delta returns to identity without mutating source bind data", () => {
   assert.equal(actualParts.length, assetIndex.parts.length);
   assert.ok(actualParts.length > 0);
   assert.deepEqual(validatePartsManifest(actualParts), []);
@@ -113,16 +87,17 @@ test("every extracted CAD node has exact source transforms at 100% and its displ
   for (const part of actualParts) {
     const sourceNode = assetIndex.parts.find((node) => node.nodeName === part.nodeName)!;
     assert.equal(part.accuracyStatus, "Verified CAD");
-    assert.deepEqual(part.finalPosition, sourceNode.position);
-    assert.deepEqual(part.finalQuaternion, sourceNode.quaternion);
+    assert.ok(sourceNode);
+    assert.deepEqual(part.finalPosition, [0, 0, 0]);
+    assert.deepEqual(part.finalQuaternion, [0, 0, 0, 1]);
     const initial = evaluatePartState(part, 0);
     assert.deepEqual(initial.position, part.initialPosition);
     assert.deepEqual(initial.quaternion, part.initialQuaternion);
     assert.equal(initial.visible, false);
     const final = evaluatePartState(part, 1);
-    assert.deepEqual(final.position, sourceNode.position);
-    assert.deepEqual(final.quaternion, sourceNode.quaternion);
-    assert.deepEqual(final.scale, sourceNode.scale);
+    assert.deepEqual(final.position, [0, 0, 0]);
+    assert.deepEqual(final.quaternion, [0, 0, 0, 1]);
+    assert.deepEqual(final.scale, [1, 1, 1]);
     assert.equal(final.visible, true);
   }
   for (const progress of [0.25, 1, 0.05, 0.5, 0, 0.75, 0.3, 1, 0.5]) {
@@ -131,8 +106,8 @@ test("every extracted CAD node has exact source transforms at 100% and its displ
   assert.equal(JSON.stringify(assetIndex), before);
 });
 
-test("combined CAD and reconstructed runtime manifest preserves chapter timing and independent identities", () => {
-  const runtimeParts = [...actualParts, ...createReconstructedParts()];
+test("custom CAD manifest preserves chapter timing and independent component identities", () => {
+  const runtimeParts = actualParts;
   assert.deepEqual(validatePartsManifest(runtimeParts), []);
   assert.equal(new Set(runtimeParts.map((part) => part.id)).size, runtimeParts.length);
   for (const part of runtimeParts) {
@@ -246,8 +221,8 @@ test("paused GSAP timeline sets absolute transforms on jumps and releases its re
   assertTupleClose(objects.get(frame.id)!.position.toArray(), frame.initialPosition);
 });
 
-test("all eleven brief chapters have contiguous intervals and continuous camera boundaries", () => {
-  assert.deepEqual(CHAPTERS.map((chapter) => chapter.group), ASSEMBLY_GROUPS);
+test("all six custom chapters have contiguous intervals and continuous camera boundaries", () => {
+  assert.deepEqual(CHAPTERS.map((chapter) => chapter.group), ["01_Frame", "09_Drain", "05_BrewGroups", "08_ControlPanel", "10_BodyPanels", "11_Accessories"]);
   assert.equal(CHAPTERS[0].start, 0.05);
   assert.equal(chapterAtProgress(0, CHAPTERS).progress, 0);
   assert.equal(CHAPTERS.at(-1)!.end, 1);
@@ -262,7 +237,7 @@ test("all eleven brief chapters have contiguous intervals and continuous camera 
     assertTupleClose(before.target, after.target, 1e-6);
     assert.equal(evaluateSceneState(chapter.end, CHAPTERS).palette.background, next.palette.background);
   }
-  assert.equal(chapterAtProgress(1, CHAPTERS).index, 10);
+  assert.equal(chapterAtProgress(1, CHAPTERS).index, CHAPTERS.length - 1);
 });
 
 test("camera and scene state remain deterministic with mobile and reduced-motion alternatives", () => {
@@ -281,9 +256,9 @@ test("camera and scene state remain deterministic with mobile and reduced-motion
 test("camera orbits stay outside the nominal machine envelope throughout every chapter", () => {
   for (let sample = 0; sample <= 1100; sample += 1) {
     const { position } = evaluateCameraState(sample / 1100, CHAPTERS);
-    const intersectsEnvelope = Math.abs(position[0]) < 0.355
-      && position[1] >= 0 && position[1] <= 0.533
-      && Math.abs(position[2]) < 0.295;
+    const intersectsEnvelope = Math.abs(position[0]) < 0.12567
+      && position[1] >= 0 && position[1] <= 0.39941
+      && Math.abs(position[2]) < 0.32505;
     assert.equal(intersectsEnvelope, false, `Camera crosses machine at progress ${sample / 1100}`);
   }
 });
